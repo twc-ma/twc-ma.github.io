@@ -34,7 +34,7 @@ div.et_pb_section.et_pb_section_0_tb_footer {
 }
 
 .et_pb_text_4_tb_footer.et_pb_text,
-.et_pb_contact_form_0_tb_footer.et_pb_contact_form_container .et_pb_contact_right p,
+.et_pb_contact_form_0_tb_footer.et_pb_contact_form_container2 .et_pb_contact_right p,
 .et_pb_text_2_tb_footer.et_pb_text,
 .et_pb_text_1_tb_footer.et_pb_text {
     color: #ffffff !important
@@ -78,7 +78,7 @@ div.et_pb_section.et_pb_section_0_tb_footer {
     line-height: 1em
 }
 
-body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container.et_pb_module .et_pb_button {
+body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container2.et_pb_module .et_pb_button {
     color: #ffffff !important;
     border-color: #D2A98E;
     background-color: #D2A98E !important
@@ -158,12 +158,12 @@ body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contac
         margin-top: -10px !important
     }
 
-    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container.et_pb_module .et_pb_button:after {
+    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container2.et_pb_module .et_pb_button:after {
         display: inline-block;
         opacity: 0
     }
 
-    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container.et_pb_module .et_pb_button:hover:after {
+    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container2.et_pb_module .et_pb_button:hover:after {
         opacity: 1
     }
 }
@@ -192,12 +192,12 @@ body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contac
         margin-top: -10px !important
     }
 
-    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container.et_pb_module .et_pb_button:after {
+    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container2.et_pb_module .et_pb_button:after {
         display: inline-block;
         opacity: 0
     }
 
-    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container.et_pb_module .et_pb_button:hover:after {
+    body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contact_form_container2.et_pb_module .et_pb_button:hover:after {
         opacity: 1
     }
 }
