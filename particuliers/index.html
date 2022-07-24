@@ -4,13 +4,19 @@
 <head>
 	<meta charset="UTF-8" />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script>if (navigator.userAgent.match(/MSIE|Internet Explorer/i) || navigator.userAgent.match(/Trident\/7\..*?rv:11/i)) { var href = document.location.href; if (!href.match(/[?&]nowprocket/)) { if (href.indexOf("?") == -1) { if (href.indexOf("#") == -1) { document.location.href = href + "?nowprocket=1" } else { document.location.href = href.replace("#", "?nowprocket=1#") } } else { if (href.indexOf("#") == -1) { document.location.href = href + "&nowprocket=1" } else { document.location.href = href.replace("#", "&nowprocket=1#") } } } }</script>
 	<script>class RocketLazyLoadScripts {
 			constructor() { this.triggerEvents = ["keydown", "mousedown", "mousemove", "touchmove", "touchstart", "touchend", "wheel"], this.userEventHandler = this._triggerListener.bind(this), this.touchStartHandler = this._onTouchStart.bind(this), this.touchMoveHandler = this._onTouchMove.bind(this), this.touchEndHandler = this._onTouchEnd.bind(this), this.clickHandler = this._onClick.bind(this), this.interceptedClicks = [], window.addEventListener("pageshow", (e => { this.persisted = e.persisted })), window.addEventListener("DOMContentLoaded", (() => { this._preconnect3rdParties() })), this.delayedScripts = { normal: [], async: [], defer: [] }, this.allJQueries = [] } _addUserInteractionListener(e) { document.hidden ? e._triggerListener() : (this.triggerEvents.forEach((t => window.addEventListener(t, e.userEventHandler, { passive: !0 }))), window.addEventListener("touchstart", e.touchStartHandler, { passive: !0 }), window.addEventListener("mousedown", e.touchStartHandler), document.addEventListener("visibilitychange", e.userEventHandler)) } _removeUserInteractionListener() { this.triggerEvents.forEach((e => window.removeEventListener(e, this.userEventHandler, { passive: !0 }))), document.removeEventListener("visibilitychange", this.userEventHandler) } _onTouchStart(e) { "HTML" !== e.target.tagName && (window.addEventListener("touchend", this.touchEndHandler), window.addEventListener("mouseup", this.touchEndHandler), window.addEventListener("touchmove", this.touchMoveHandler, { passive: !0 }), window.addEventListener("mousemove", this.touchMoveHandler), e.target.addEventListener("click", this.clickHandler), this._renameDOMAttribute(e.target, "onclick", "rocket-onclick")) } _onTouchMove(e) { window.removeEventListener("touchend", this.touchEndHandler), window.removeEventListener("mouseup", this.touchEndHandler), window.removeEventListener("touchmove", this.touchMoveHandler, { passive: !0 }), window.removeEventListener("mousemove", this.touchMoveHandler), e.target.removeEventListener("click", this.clickHandler), this._renameDOMAttribute(e.target, "rocket-onclick", "onclick") } _onTouchEnd(e) { window.removeEventListener("touchend", this.touchEndHandler), window.removeEventListener("mouseup", this.touchEndHandler), window.removeEventListener("touchmove", this.touchMoveHandler, { passive: !0 }), window.removeEventListener("mousemove", this.touchMoveHandler) } _onClick(e) { e.target.removeEventListener("click", this.clickHandler), this._renameDOMAttribute(e.target, "rocket-onclick", "onclick"), this.interceptedClicks.push(e), e.preventDefault(), e.stopPropagation(), e.stopImmediatePropagation() } _replayClicks() { window.removeEventListener("touchstart", this.touchStartHandler, { passive: !0 }), window.removeEventListener("mousedown", this.touchStartHandler), this.interceptedClicks.forEach((e => { e.target.dispatchEvent(new MouseEvent("click", { view: e.view, bubbles: !0, cancelable: !0 })) })) } _renameDOMAttribute(e, t, n) { e.hasAttribute && e.hasAttribute(t) && (event.target.setAttribute(n, event.target.getAttribute(t)), event.target.removeAttribute(t)) } _triggerListener() { this._removeUserInteractionListener(this), "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", this._loadEverythingNow.bind(this)) : this._loadEverythingNow() } _preconnect3rdParties() {
 				let e = []; document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t => {
 					if (t.hasAttribute("src")) {
-						const n = new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+						const n = new URL(t.src).origin; n !== location.origin && e.push({ src: n, crossOrigin: t.crossOrigin || "module" === t.getAttribute("data-rocket-type") })
+					}
+				})), e = [...new Map(e.map((e => [JSON.stringify(e), e]))).values()], this._batchInjectResourceHints(e, "preconnect")
+			} async _loadEverythingNow() { this.lastBreath = Date.now(), this._delayEventListeners(), this._delayJQueryReady(this), this._handleDocumentWrite(), this._registerAllDelayedScripts(), this._preloadAllScripts(), await this._loadScriptsFromList(this.delayedScripts.normal), await this._loadScriptsFromList(this.delayedScripts.defer), await this._loadScriptsFromList(this.delayedScripts.async); try { await this._triggerDOMContentLoaded(), await this._triggerWindowLoad() } catch (e) { } window.dispatchEvent(new Event("rocket-allScriptsLoaded")), this._replayClicks() } _registerAllDelayedScripts() { document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e => { e.hasAttribute("src") ? e.hasAttribute("async") && !1 !== e.async ? this.delayedScripts.async.push(e) : e.hasAttribute("defer") && !1 !== e.defer || "module" === e.getAttribute("data-rocket-type") ? this.delayedScripts.defer.push(e) : this.delayedScripts.normal.push(e) : this.delayedScripts.normal.push(e) })) } async _transformScript(e) { return await this._littleBreath(), new Promise((t => { const n = document.createElement("script");[...e.attributes].forEach((e => { let t = e.nodeName; "type" !== t && ("data-rocket-type" === t && (t = "type"), n.setAttribute(t, e.nodeValue)) })), e.hasAttribute("src") ? (n.addEventListener("load", t), n.addEventListener("error", t)) : (n.text = e.text, t()); try { e.parentNode.replaceChild(n, e) } catch (e) { t() } })) } async _loadScriptsFromList(e) { const t = e.shift(); return t ? (await this._transformScript(t), this._loadScriptsFromList(e)) : Promise.resolve() } _preloadAllScripts() { this._batchInjectResourceHints([...this.delayedScripts.normal, ...this.delayedScripts.defer, ...this.delayedScripts.async], "preload") } _batchInjectResourceHints(e, t) { var n = document.createDocumentFragment(); e.forEach((e => { if (e.src) { const i = document.createElement("link"); i.href = e.src, i.rel = t, "preconnect" !== t && (i.as = "script"), e.getAttribute && "module" === e.getAttribute("data-rocket-type") && (i.crossOrigin = !0), e.crossOrigin && (i.crossOrigin = e.crossOrigin), n.appendChild(i) } })), document.head.appendChild(n) } _delayEventListeners() { let e = {}; function t(t, n) { !function (t) { function n(n) { return e[t].eventsToRewrite.indexOf(n) >= 0 ? "rocket-" + n : n } e[t] || (e[t] = { originalFunctions: { add: t.addEventListener, remove: t.removeEventListener }, eventsToRewrite: [] }, t.addEventListener = function () { arguments[0] = n(arguments[0]), e[t].originalFunctions.add.apply(t, arguments) }, t.removeEventListener = function () { arguments[0] = n(arguments[0]), e[t].originalFunctions.remove.apply(t, arguments) }) }(t), e[t].eventsToRewrite.push(n) } function n(e, t) { let n = e[t]; Object.defineProperty(e, t, { get: () => n || function () { }, set(i) { e["rocket" + t] = n = i } }) } t(document, "DOMContentLoaded"), t(window, "DOMContentLoaded"), t(window, "load"), t(window, "pageshow"), t(document, "readystatechange"), n(document, "onreadystatechange"), n(window, "onload"), n(window, "onpageshow") } _delayJQueryReady(e) { let t = window.jQuery; Object.defineProperty(window, "jQuery", { get: () => t, set(n) { if (n && n.fn && !e.allJQueries.includes(n)) { n.fn.ready = n.fn.init.prototype.ready = function (t) { e.domReadyFired ? t.bind(document)(n) : document.addEventListener("rocket-DOMContentLoaded", (() => t.bind(document)(n))) }; const t = n.fn.on; n.fn.on = n.fn.init.prototype.on = function () { if (this[0] === window) { function e(e) { return e.split(" ").map((e => "load" === e || 0 === e.indexOf("load.") ? "rocket-jquery-load" : e)).join(" ") } "string" == typeof arguments[0] || arguments[0] instanceof String ? arguments[0] = e(arguments[0]) : "object" == typeof arguments[0] && Object.keys(arguments[0]).forEach((t => { delete Object.assign(arguments[0], { [e(t)]: arguments[0][t] })[t] })) } return t.apply(this, arguments), this }, e.allJQueries.push(n) } t = n } }) } async _triggerDOMContentLoaded() { this.domReadyFired = !0, await this._littleBreath(), document.dispatchEvent(new Event("rocket-DOMContentLoaded")), await this._littleBreath(), window.dispatchEvent(new Event("rocket-DOMContentLoaded")), await this._littleBreath(), document.dispatchEvent(new Event("rocket-readystatechange")), await this._littleBreath(), document.rocketonreadystatechange && document.rocketonreadystatechange() } async _triggerWindowLoad() { await this._littleBreath(), window.dispatchEvent(new Event("rocket-load")), await this._littleBreath(), window.rocketonload && window.rocketonload(), await this._littleBreath(), this.allJQueries.forEach((e => e(window).trigger("rocket-jquery-load"))), await this._littleBreath(); const e = new Event("rocket-pageshow"); e.persisted = this.persisted, window.dispatchEvent(e), await this._littleBreath(), window.rocketonpageshow && window.rocketonpageshow({ persisted: this.persisted }) } _handleDocumentWrite() { const e = new Map; document.write = document.writeln = function (t) { const n = document.currentScript, i = document.createRange(), r = n.parentElement; let o = e.get(n); void 0 === o && (o = n.nextSibling, e.set(n, o)); const s = document.createDocumentFragment(); i.setStart(s, 0), s.appendChild(i.createContextualFragment(t)), r.insertBefore(s, o) } } async _littleBreath() { Date.now() - this.lastBreath > 45 && (await this._requestAnimFrame(), this.lastBreath = Date.now()) } async _requestAnimFrame() { return document.hidden ? new Promise((e => setTimeout(e))) : new Promise((e => requestAnimationFrame(e))) } static run() { const e = new RocketLazyLoadScripts; e._addUserInteractionListener(e) }
+		} RocketLazyLoadScripts.run();</script>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="pingback" href="../xmlrpc.php" />
@@ -22,7 +28,7 @@
 	<style id="et-builder-googlefonts-cached-inline"></style>
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
-	
+
 	<title>Particuliers - TEAMWORK</title>
 	<link rel="preload" as="font"
 		href="https://fonts.gstatic.com/s/lexenddeca/v17/K2FifZFYk-dHSE0UPPuwQ7CrD94i-NCKm-U48M1wpRnG.ttf" crossorigin>
@@ -16603,7 +16609,7 @@
 	<meta name="twitter:data1" content="3 minutes" />
 	<script type="application/ld+json"
 		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://twc.ma/#website","url":"https://twc.ma/","name":"TEAMWORK","description":"Cabinet de conseil et de formation ","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://twc.ma/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"WebPage","@id":"https://twc.ma/particuliers/","url":"https://twc.ma/particuliers/","name":"Particuliers - TEAMWORK","isPartOf":{"@id":"https://twc.ma/#website"},"datePublished":"2020-08-11T07:23:15+00:00","dateModified":"2022-03-15T07:58:31+00:00","description":"Teamwork dispense des formations spécialement pour les particuliers, venez découvrir les différentes thématiques que nous traitons.","breadcrumb":{"@id":"https://twc.ma/particuliers/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://twc.ma/particuliers/"]}]},{"@type":"BreadcrumbList","@id":"https://twc.ma/particuliers/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://twc.ma/"},{"@type":"ListItem","position":2,"name":"Particuliers"}]}]}</script>
-	
+
 
 
 	<link rel='dns-prefetch' href='http://use.fontawesome.com/' />
@@ -16626,12 +16632,12 @@
 	<style id='font-awesome-official-v4shim-inline-css' type='text/css'></style>
 	<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
 		src='../wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js' defer></script>
-	
+
 	<script type='text/javascript' id='cookie-law-info-js-extra'>
-/* <![CDATA[ */
-var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies": [], "ccpaEnabled": "", "ccpaRegionBased": "", "ccpaBarEnabled": "", "strictlyEnabled": ["necessary", "obligatoire"], "ccpaType": "gdpr", "js_blocking": "", "custom_integration": "", "triggerDomRefresh": "", "secure_cookies": "" };
-			 var cli_cookiebar_settings = { "animate_speed_hide": "500", "animate_speed_show": "500", "background": "#FFF", "border": "#b1a6a6c2", "border_on": "", "button_1_button_colour": "#000", "button_1_button_hover": "#000000", "button_1_link_colour": "#fff", "button_1_as_button": "1", "button_1_new_win": "", "button_2_button_colour": "#333", "button_2_button_hover": "#292929", "button_2_link_colour": "#444", "button_2_as_button": "", "button_2_hidebar": "", "button_3_button_colour": "#000", "button_3_button_hover": "#000000", "button_3_link_colour": "#fff", "button_3_as_button": "1", "button_3_new_win": "", "button_4_button_colour": "#000", "button_4_button_hover": "#000000", "button_4_link_colour": "#62a329", "button_4_as_button": "", "button_7_button_colour": "#61a229", "button_7_button_hover": "#4e8221", "button_7_link_colour": "#fff", "button_7_as_button": "1", "button_7_new_win": "", "font_family": "inherit", "header_fix": "", "notify_animate_hide": "1", "notify_animate_show": "", "notify_div_id": "#cookie-law-info-bar", "notify_position_horizontal": "left", "notify_position_vertical": "bottom", "scroll_close": "", "scroll_close_reload": "", "accept_close_reload": "", "reject_close_reload": "", "showagain_tab": "1", "showagain_background": "#fff", "showagain_border": "#000", "showagain_div_id": "#cookie-law-info-again", "showagain_x_position": "100px", "text": "#000", "show_once_yn": "", "show_once": "10000", "logging_on": "", "as_popup": "", "popup_overlay": "1", "bar_heading_text": "", "cookie_bar_as": "banner", "popup_showagain_position": "bottom-right", "widget_position": "left" };
-			 var log_object = { "ajax_url": "https:\/\/twc.ma\/wp-admin\/admin-ajax.php" };
+		/* <![CDATA[ */
+		var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies": [], "ccpaEnabled": "", "ccpaRegionBased": "", "ccpaBarEnabled": "", "strictlyEnabled": ["necessary", "obligatoire"], "ccpaType": "gdpr", "js_blocking": "", "custom_integration": "", "triggerDomRefresh": "", "secure_cookies": "" };
+		var cli_cookiebar_settings = { "animate_speed_hide": "500", "animate_speed_show": "500", "background": "#FFF", "border": "#b1a6a6c2", "border_on": "", "button_1_button_colour": "#000", "button_1_button_hover": "#000000", "button_1_link_colour": "#fff", "button_1_as_button": "1", "button_1_new_win": "", "button_2_button_colour": "#333", "button_2_button_hover": "#292929", "button_2_link_colour": "#444", "button_2_as_button": "", "button_2_hidebar": "", "button_3_button_colour": "#000", "button_3_button_hover": "#000000", "button_3_link_colour": "#fff", "button_3_as_button": "1", "button_3_new_win": "", "button_4_button_colour": "#000", "button_4_button_hover": "#000000", "button_4_link_colour": "#62a329", "button_4_as_button": "", "button_7_button_colour": "#61a229", "button_7_button_hover": "#4e8221", "button_7_link_colour": "#fff", "button_7_as_button": "1", "button_7_new_win": "", "font_family": "inherit", "header_fix": "", "notify_animate_hide": "1", "notify_animate_show": "", "notify_div_id": "#cookie-law-info-bar", "notify_position_horizontal": "left", "notify_position_vertical": "bottom", "scroll_close": "", "scroll_close_reload": "", "accept_close_reload": "", "reject_close_reload": "", "showagain_tab": "1", "showagain_background": "#fff", "showagain_border": "#000", "showagain_div_id": "#cookie-law-info-again", "showagain_x_position": "100px", "text": "#000", "show_once_yn": "", "show_once": "10000", "logging_on": "", "as_popup": "", "popup_overlay": "1", "bar_heading_text": "", "cookie_bar_as": "banner", "popup_showagain_position": "bottom-right", "widget_position": "left" };
+		var log_object = { "ajax_url": "https:\/\/twc.ma\/wp-admin\/admin-ajax.php" };
 /* ]]> */
 	</script>
 	<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
@@ -16861,13 +16867,16 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 									<ul class="sub-menu">
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237449">
-											<a href="../formations/">Formations</a></li>
+											<a href="../formations/">Formations</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237448">
-											<a href="../conseil/">Conseil</a></li>
+											<a href="../conseil/">Conseil</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237999">
-											<a href="../bilans-de-competences/">Bilans de compétences</a></li>
+											<a href="../bilans-de-competences/">Bilans de compétences</a>
+										</li>
 									</ul>
 								</li>
 								<li
@@ -16876,7 +16885,8 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 									<ul class="sub-menu">
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238025">
-											<a href="../bilans-de-competences/">Bilans de compétences</a></li>
+											<a href="../bilans-de-competences/">Bilans de compétences</a>
+										</li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237037"><a
@@ -16895,7 +16905,7 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 				</div> <!-- .container -->
 				<div class="et_search_outer">
 					<div class="container et_search_form_container">
-						<form role="search" method="get" class="et-search-form" >
+						<form role="search" method="get" class="et-search-form">
 							<input type="search" class="et-search-field" placeholder="Rechercher &hellip;" value=""
 								name="s" title="Rechercher:" />
 						</form>
@@ -17010,10 +17020,8 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 
 													<div class="et_pb_text_inner">
-														<p style="text-align: center;">Voici nos prestations déstinées
-															aux particuliers. Vous y trouverez le détail de nos
-															prestations à travers les différentes thématiques que nous
-															traitons. Ils sont complètement modulables et s’adaptent à
+														<p style="text-align: center;">Nos prestation sont complètement
+															modulables et s’adaptent à
 															votre demande.</p>
 														<p style="text-align: center;">N’hésitez pas à nous contacter
 															pour une analyse précise et fine de votre besoin de
@@ -17026,51 +17034,7 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 
 										</div>
-										<div class="et_pb_row et_pb_row_3 et_pb_equal_columns et_pb_gutters2">
-											<div
-												class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-
-
-
-												<div
-													class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
-													<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-														href="../courses/equilibre-personnel/index.html">Équilibre
-														personnel et professionnel</a>
-												</div>
-												<div
-													class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
-													<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-														href="../courses/efficacite-professionnelle/index.html">Efficacité
-														professionnelle</a>
-												</div>
-												<div
-													class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
-													<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-														href="../courses/communication-relations/index.html">Communication
-														et relations interpersonnelles</a>
-												</div>
-											</div>
-
-
-
-
-										</div>
-										<div class="et_pb_row et_pb_row_4">
-											<div
-												class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
-
-
-
-
-
-											</div>
-
-
-
-
-										</div>
+								
 
 
 									</div>
@@ -17403,19 +17367,18 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 										<div class="et_pb_contact">
 											<form class="et_pb_contact_form clearfix" method="post"
-												action="https://formsubmit.co/970afd1b4d9a2661512e053e718e6ec0" redirect="true">
+												action="https://formsubmit.co/970afd1b4d9a2661512e053e718e6ec0"
+												redirect="true">
 												<p class="et_pb_contact_field et_pb_contact_field_0_tb_footer et_pb_contact_field_half"
 													data-id="name" data-type="input">
 
 
 
 
-													<label for="name"
-														class="et_pb_contact_form_label">Nom</label>
-													<input type="text" id="name" class="input" value=""
-														name="name" data-required_mark="required"
-														data-field_type="input" data-original_id="name"
-														placeholder="Nom" required>
+													<label for="name" class="et_pb_contact_form_label">Nom</label>
+													<input type="text" id="name" class="input" value="" name="name"
+														data-required_mark="required" data-field_type="input"
+														data-original_id="name" placeholder="Nom" required>
 												</p>
 												<p class="et_pb_contact_field et_pb_contact_field_1_tb_footer et_pb_contact_field_half et_pb_contact_field_last"
 													data-id="email" data-type="email">
@@ -17423,12 +17386,11 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 
 
-													<label for="email"
-														class="et_pb_contact_form_label">Adresse e-mail</label>
-													<input type="email" id="email" class="input" value=""
-														name="email" data-required_mark="required"
-														data-field_type="email" data-original_id="email"
-														placeholder="Adresse e-mail" required>
+													<label for="email" class="et_pb_contact_form_label">Adresse
+														e-mail</label>
+													<input type="email" id="email" class="input" value="" name="email"
+														data-required_mark="required" data-field_type="email"
+														data-original_id="email" placeholder="Adresse e-mail" required>
 												</p>
 												<p class="et_pb_contact_field et_pb_contact_field_2_tb_footer et_pb_contact_field_last"
 													data-id="message" data-type="text">
@@ -17438,19 +17400,20 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 													<label for="message"
 														class="et_pb_contact_form_label">Message</label>
-													<textarea name="message"
-														id="message" class="et_pb_contact_message input"
+													<textarea name="message" id="message"
+														class="et_pb_contact_message input"
 														data-required_mark="required" data-field_type="text"
-														data-original_id="message" placeholder="Message" required></textarea>
+														data-original_id="message" placeholder="Message"
+														required></textarea>
 												</p>
-												
+
 												<div class="et_contact_bottom_container">
 
-													<button type="submit" 
+													<button type="submit"
 														class="et_pb_contact_submit et_pb_button">Envoyer un
 														message</button>
 												</div>
-												
+
 											</form>
 										</div>
 									</div>
@@ -17485,8 +17448,10 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 
 										<div class="et_pb_text_inner">
-											<p>Copyright © <script>document.write(new Date().getFullYear())</script> Teamwork | Tous droits réservés | <span
-													style="color: #ffffff;"><a href="../mentions-legales/index.html"
+											<p>Copyright ©
+												<script>document.write(new Date().getFullYear())</script> Teamwork |
+												Tous droits réservés | <span style="color: #ffffff;"><a
+														href="../mentions-legales/index.html"
 														style="color: #ffffff;">Mentions Légales</a></span> | <span
 													style="color: #ffffff;"><a
 														href="../politique-de-confidentialite/index.html"
@@ -17495,7 +17460,7 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 										</div>
 									</div>
 								</div>
-								
+
 
 
 
@@ -17765,7 +17730,7 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 		</div>
 	</div>
 	<script type="text/javascript">
-			 var et_animation_data = [{ "class": "et_pb_column_0", "style": "slideTop", "repeat": "once", "duration": "1500ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_3", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
+		var et_animation_data = [{ "class": "et_pb_column_0", "style": "slideTop", "repeat": "once", "duration": "1500ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_3", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
 	</script>
 	<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
 	$('.et-social-instagram').addClass('fab fa-linkedin-in').removeClass('et-social-instagram');
@@ -17787,8 +17752,8 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 
 
 	<script type='text/javascript' id='quicktags-js-extra'>
-			 /* <![CDATA[ */
-			 var quicktagsL10n = { "closeAllOpenTags": "Fermer toutes les balises ouvertes", "closeTags": "fermer les balises", "enterURL": "Saisissez l\u2019URL", "enterImageURL": "Saisissez l\u2019URL de l\u2019image", "enterImageDescription": "Saisissez une description pour l\u2019image", "textdirection": "direction du texte", "toggleTextdirection": "Inverser la direction de l\u2019\u00e9diteur de texte", "dfw": "Mode d\u2019\u00e9criture sans distraction", "strong": "Gras", "strongClose": "Fermer la balise de gras", "em": "Italique", "emClose": "Fermer la balise d\u2019italique", "link": "Ins\u00e9rer un lien", "blockquote": "Bloc de citation", "blockquoteClose": "Fermer la balise de citation", "del": "Texte supprim\u00e9 (barr\u00e9)", "delClose": "Fermer la baliste de texte supprim\u00e9", "ins": "Texte ins\u00e9r\u00e9", "insClose": "Fermer la balise d\u2019insertion de texte", "image": "Ins\u00e9rer une image", "ul": "Liste \u00e0 puces", "ulClose": "Fermer la balise de liste \u00e0 puces", "ol": "Liste num\u00e9rot\u00e9e", "olClose": "Fermer la balise de liste num\u00e9rot\u00e9e", "li": "\u00c9l\u00e9ment de liste", "liClose": "Balise de fermeture de l\u2019\u00e9l\u00e9ment de liste", "code": "Code", "codeClose": "Balise de fermeture du code", "more": "Ins\u00e9rer la balise \u00ab\u00a0Lire la suite\u2026\u00a0\u00bb" };
+		/* <![CDATA[ */
+		var quicktagsL10n = { "closeAllOpenTags": "Fermer toutes les balises ouvertes", "closeTags": "fermer les balises", "enterURL": "Saisissez l\u2019URL", "enterImageURL": "Saisissez l\u2019URL de l\u2019image", "enterImageDescription": "Saisissez une description pour l\u2019image", "textdirection": "direction du texte", "toggleTextdirection": "Inverser la direction de l\u2019\u00e9diteur de texte", "dfw": "Mode d\u2019\u00e9criture sans distraction", "strong": "Gras", "strongClose": "Fermer la balise de gras", "em": "Italique", "emClose": "Fermer la balise d\u2019italique", "link": "Ins\u00e9rer un lien", "blockquote": "Bloc de citation", "blockquoteClose": "Fermer la balise de citation", "del": "Texte supprim\u00e9 (barr\u00e9)", "delClose": "Fermer la baliste de texte supprim\u00e9", "ins": "Texte ins\u00e9r\u00e9", "insClose": "Fermer la balise d\u2019insertion de texte", "image": "Ins\u00e9rer une image", "ul": "Liste \u00e0 puces", "ulClose": "Fermer la balise de liste \u00e0 puces", "ol": "Liste num\u00e9rot\u00e9e", "olClose": "Fermer la balise de liste num\u00e9rot\u00e9e", "li": "\u00c9l\u00e9ment de liste", "liClose": "Balise de fermeture de l\u2019\u00e9l\u00e9ment de liste", "code": "Code", "codeClose": "Balise de fermeture du code", "more": "Ins\u00e9rer la balise \u00ab\u00a0Lire la suite\u2026\u00a0\u00bb" };
 /* ]]> */
 	</script>
 	<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
@@ -17818,8 +17783,8 @@ var Cli_Data = { "nn_cookie_ids": [], "cookielist": [], "non_necessary_cookies":
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 	<script type='text/javascript' id='tutor-frontend-js-extra'>
-			 /* <![CDATA[ */
-			 var _tutorobject = { "ajaxurl": "https:\/\/twc.ma\/wp-admin\/admin-ajax.php", "home_url": "https:\/\/twc.ma", "base_path": "\/", "tutor_url": "https:\/\/twc.ma\/wp-content\/plugins\/tutor\/", "tutor_pro_url": null, "nonce_key": "_tutor_nonce", "_tutor_nonce": "94d916e72d", "loading_icon_url": "https:\/\/twc.ma\/wp-admin\/images\/wpspin_light.gif", "placeholder_img_src": "https:\/\/twc.ma\/wp-content\/plugins\/tutor\/assets\/images\/placeholder.jpg", "enable_lesson_classic_editor": "", "tutor_frontend_dashboard_url": "\/", "wp_date_format": "MM dd, yy", "is_admin": "", "is_admin_bar_showing": "" };
+		/* <![CDATA[ */
+		var _tutorobject = { "ajaxurl": "https:\/\/twc.ma\/wp-admin\/admin-ajax.php", "home_url": "https:\/\/twc.ma", "base_path": "\/", "tutor_url": "https:\/\/twc.ma\/wp-content\/plugins\/tutor\/", "tutor_pro_url": null, "nonce_key": "_tutor_nonce", "_tutor_nonce": "94d916e72d", "loading_icon_url": "https:\/\/twc.ma\/wp-admin\/images\/wpspin_light.gif", "placeholder_img_src": "https:\/\/twc.ma\/wp-content\/plugins\/tutor\/assets\/images\/placeholder.jpg", "enable_lesson_classic_editor": "", "tutor_frontend_dashboard_url": "\/", "wp_date_format": "MM dd, yy", "is_admin": "", "is_admin_bar_showing": "" };
 /* ]]> */
 	</script>
 	<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='tutor-frontend-js-translations'>
@@ -17841,8 +17806,8 @@ jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fermer","cur
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 </script>
 	<script type='text/javascript' id='rocket-preload-links-js-extra'>
-			 /* <![CDATA[ */
-			 var RocketPreloadLinksConfig = { "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/twc.ma", "onHoverDelay": "100", "rateThrottle": "3" };
+		/* <![CDATA[ */
+		var RocketPreloadLinksConfig = { "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/twc.ma", "onHoverDelay": "100", "rateThrottle": "3" };
 /* ]]> */
 	</script>
 	<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
@@ -17851,12 +17816,12 @@ jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fermer","cur
 }());
 </script>
 	<script type='text/javascript' id='divi-custom-script-js-extra'>
-			 /* <![CDATA[ */
-			 var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
-			 var et_builder_utils_params = { "condition": { "diviTheme": true, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
-			 var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
-			 var et_pb_custom = { "ajaxurl": "https:\/\/twc.ma\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/twc.ma\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/twc.ma\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "5aaaf91b04", "subscription_failed": "Veuillez v\u00e9rifier les champs ci-dessous pour vous assurer que vous avez entr\u00e9 les informations correctes.", "et_ab_log_nonce": "87d0fa86b1", "fill_message": "S'il vous pla\u00eet, remplissez les champs suivants:", "contact_error_message": "Veuillez corriger les erreurs suivantes :", "invalid": "E-mail non valide", "captcha": "Captcha", "prev": "Pr\u00e9c\u00e9dent", "previous": "Pr\u00e9c\u00e9dente", "next": "Prochaine", "wrong_captcha": "Vous avez entr\u00e9 le mauvais num\u00e9ro dans le captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "9", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "yes", "is_shortcode_tracking": "", "tinymce_uri": "https:\/\/twc.ma\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": [] };
-			 var et_pb_box_shadow_elements = [];
+		/* <![CDATA[ */
+		var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
+		var et_builder_utils_params = { "condition": { "diviTheme": true, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
+		var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+		var et_pb_custom = { "ajaxurl": "https:\/\/twc.ma\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/twc.ma\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/twc.ma\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "5aaaf91b04", "subscription_failed": "Veuillez v\u00e9rifier les champs ci-dessous pour vous assurer que vous avez entr\u00e9 les informations correctes.", "et_ab_log_nonce": "87d0fa86b1", "fill_message": "S'il vous pla\u00eet, remplissez les champs suivants:", "contact_error_message": "Veuillez corriger les erreurs suivantes :", "invalid": "E-mail non valide", "captcha": "Captcha", "prev": "Pr\u00e9c\u00e9dent", "previous": "Pr\u00e9c\u00e9dente", "next": "Prochaine", "wrong_captcha": "Vous avez entr\u00e9 le mauvais num\u00e9ro dans le captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "9", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "yes", "is_shortcode_tracking": "", "tinymce_uri": "https:\/\/twc.ma\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": [] };
+		var et_pb_box_shadow_elements = [];
 /* ]]> */
 	</script>
 	<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
@@ -17871,27 +17836,27 @@ jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fermer","cur
 		src='../wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids8ad3.js?ver=1655710283'
 		id='fitvids-js' defer></script>
 	<script type='text/javascript' id='et-builder-modules-script-motion-js-extra'>
-			 /* <![CDATA[ */
-			 var et_pb_motion_elements = { "desktop": [{ "id": ".et_pb_section_2", "start": 0, "midStart": 50, "midEnd": 50, "end": 100, "startValue": 70, "midValue": 100, "endValue": 100, "resolver": "scale", "module_type": "et_pb_section", "trigger_start": "middle", "trigger_end": "middle" }], "tablet": [{ "id": ".et_pb_section_2", "start": 0, "midStart": 50, "midEnd": 50, "end": 100, "startValue": 100, "midValue": 100, "endValue": 100, "resolver": "scale", "module_type": "et_pb_section", "trigger_start": "middle", "trigger_end": "middle" }], "phone": [{ "id": ".et_pb_section_2", "start": 0, "midStart": 50, "midEnd": 50, "end": 100, "startValue": 100, "midValue": 100, "endValue": 100, "resolver": "scale", "module_type": "et_pb_section", "trigger_start": "middle", "trigger_end": "middle" }] };
+		/* <![CDATA[ */
+		var et_pb_motion_elements = { "desktop": [{ "id": ".et_pb_section_2", "start": 0, "midStart": 50, "midEnd": 50, "end": 100, "startValue": 70, "midValue": 100, "endValue": 100, "resolver": "scale", "module_type": "et_pb_section", "trigger_start": "middle", "trigger_end": "middle" }], "tablet": [{ "id": ".et_pb_section_2", "start": 0, "midStart": 50, "midEnd": 50, "end": 100, "startValue": 100, "midValue": 100, "endValue": 100, "resolver": "scale", "module_type": "et_pb_section", "trigger_start": "middle", "trigger_end": "middle" }], "phone": [{ "id": ".et_pb_section_2", "start": 0, "midStart": 50, "midEnd": 50, "end": 100, "startValue": 100, "midValue": 100, "endValue": 100, "resolver": "scale", "module_type": "et_pb_section", "trigger_start": "middle", "trigger_end": "middle" }] };
 /* ]]> */
 	</script>
 	<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
 		src='../wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects8ad3.js?ver=1655710283'
 		id='et-builder-modules-script-motion-js' defer></script>
 	<script>window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
-				 var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
-					 var observer = new MutationObserver(function (mutations) {
-						 var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
-							 for (var i = 0; i < mutation.addedNodes.length; i++) {
-								 if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
-								 if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
-								 images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
-								 if (is_iframe) { iframe_count += 1 }
-							 }
-						 }); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
-					 }); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
-				 }
-			 }, !1)</script>
+			var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+				var observer = new MutationObserver(function (mutations) {
+					var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+						for (var i = 0; i < mutation.addedNodes.length; i++) {
+							if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+							if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+							images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+							if (is_iframe) { iframe_count += 1 }
+						}
+					}); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+				}); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+			}
+		}, !1)</script>
 	<script data-no-minify="1" async
 		src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
 	<span class="et_pb_scroll_top et-pb-icon"></span>
