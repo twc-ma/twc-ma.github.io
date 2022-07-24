@@ -17672,7 +17672,10 @@
 		.et_pb_blurb_6 .et_pb_blurb_content,
 		.et_pb_blurb_7 .et_pb_blurb_content,
 		.et_pb_blurb_8 .et_pb_blurb_content,
-		.et_pb_blurb_9 .et_pb_blurb_content {
+		.et_pb_blurb_9 .et_pb_blurb_content,
+		.et_pb_blurb_13 .et_pb_blurb_content,
+		.et_pb_blurb_14 .et_pb_blurb_content,
+		.et_pb_blurb_15 .et_pb_blurb_content {
 			max-width: 100%
 		}
 
@@ -17838,8 +17841,10 @@
 			font-weight: 700;
 			font-size: 18px;
 			color: #696969 !important;
-			line-height: 4.1em;
-			text-align: left
+			line-height: 25px;
+			text-align: left;
+			min-height: 35px;
+			padding: 20px;
 		}
 
 		.et_pb_blurb_1.et_pb_blurb p,
@@ -17853,7 +17858,10 @@
 		.et_pb_blurb_6.et_pb_blurb p,
 		.et_pb_blurb_7.et_pb_blurb p,
 		.et_pb_blurb_8.et_pb_blurb p,
-		.et_pb_blurb_9.et_pb_blurb p {
+		.et_pb_blurb_9.et_pb_blurb p,
+		.et_pb_blurb_13.et_pb_blurb p,
+		.et_pb_blurb_14.et_pb_blurb p,
+		.et_pb_blurb_15.et_pb_blurb p {
 			line-height: .1em
 		}
 
@@ -17884,7 +17892,10 @@
 		.et_pb_blurb_6 .et_pb_main_blurb_image .et-pb-icon,
 		.et_pb_blurb_7 .et_pb_main_blurb_image .et-pb-icon,
 		.et_pb_blurb_8 .et_pb_main_blurb_image .et-pb-icon,
-		.et_pb_blurb_9 .et_pb_main_blurb_image .et-pb-icon {
+		.et_pb_blurb_9 .et_pb_main_blurb_image .et-pb-icon,
+		.et_pb_blurb_13 .et_pb_main_blurb_image .et-pb-icon,
+		.et_pb_blurb_14 .et_pb_main_blurb_image .et-pb-icon,
+		.et_pb_blurb_15 .et_pb_main_blurb_image .et-pb-icon {
 			border-right-width: 10px;
 			border-right-color: transparent
 		}
@@ -17900,7 +17911,10 @@
 		.et_pb_blurb_6,
 		.et_pb_blurb_7,
 		.et_pb_blurb_8,
-		.et_pb_blurb_9 {
+		.et_pb_blurb_9,
+		.et_pb_blurb_13,
+		.et_pb_blurb_14,
+		.et_pb_blurb_15 {
 			box-shadow: 0 0 40px 5px rgba(51, 51, 51, .1);
 			transition: transform .3s ease 0s
 		}
@@ -17917,6 +17931,9 @@
 		.et_pb_blurb_7:hover,
 		.et_pb_blurb_8:hover,
 		.et_pb_blurb_9:hover,
+		.et_pb_blurb_13:hover,
+		.et_pb_blurb_14:hover,
+		.et_pb_blurb_15:hover,
 		.et_pb_image_1:hover,
 		.et_pb_image_2:hover,
 		.et_pb_image_3:hover,
@@ -17937,7 +17954,10 @@
 		.et_pb_blurb_6 .et_pb_main_blurb_image .et_pb_image_wrap,
 		.et_pb_blurb_7 .et_pb_main_blurb_image .et_pb_image_wrap,
 		.et_pb_blurb_8 .et_pb_main_blurb_image .et_pb_image_wrap,
-		.et_pb_blurb_9 .et_pb_main_blurb_image .et_pb_image_wrap {
+		.et_pb_blurb_9 .et_pb_main_blurb_image .et_pb_image_wrap,
+		.et_pb_blurb_13 .et_pb_main_blurb_image .et_pb_image_wrap,
+		.et_pb_blurb_14 .et_pb_main_blurb_image .et_pb_image_wrap,
+		.et_pb_blurb_15 .et_pb_main_blurb_image .et_pb_image_wrap {
 			width: 90px
 		}
 
@@ -17979,8 +17999,8 @@
 			font-weight: 700;
 			font-size: 18px;
 			color: #696969 !important;
-			line-height: 2em;
-			text-align: left
+			text-align: left;
+			padding: 20px;
 		}
 
 		.et_pb_blurb_4.et_pb_blurb {
@@ -18127,6 +18147,38 @@
 			padding-left: 20px !important
 		}
 
+		.et_pb_blurb_13.et_pb_blurb,
+		.et_pb_blurb_14.et_pb_blurb,
+		.et_pb_blurb_15.et_pb_blurb {
+			font-family: 'Lexend Deca', Helvetica, Arial, Lucida, sans-serif;
+			font-size: 18px;
+			color: #333 !important;
+			line-height: .1em;
+			background-color: #fff;
+			border-radius: 5px 5px 5px 5px;
+			overflow: hidden;
+			border-left-width: 9px;
+			border-left-color: #607424;
+			padding-top: 0 !important;
+			padding-right: 20px !important;
+			padding-bottom: 0 !important;
+			padding-left: 20px !important
+		}
+
+		.et_pb_blurb_13.et_pb_blurb .et_pb_module_header,
+		.et_pb_blurb_13.et_pb_blurb .et_pb_module_header a,
+		.et_pb_blurb_14.et_pb_blurb .et_pb_module_header,
+		.et_pb_blurb_14.et_pb_blurb .et_pb_module_header a,
+		.et_pb_blurb_15.et_pb_blurb .et_pb_module_header,
+		.et_pb_blurb_15.et_pb_blurb .et_pb_module_header a {
+			font-family: 'Lexend Deca', Helvetica, Arial, Lucida, sans-serif;
+			font-weight: 700;
+			font-size: 18px;
+			color: #696969 !important;
+			text-align: left;
+			padding: 20px;
+		}
+
 		.et_pb_text_11 h3,
 		.et_pb_text_14 h3,
 		.et_pb_text_17 h3 {
@@ -18175,7 +18227,9 @@
 
 		.et_pb_divider_0:before,
 		.et_pb_divider_2:before,
-		.et_pb_divider_3:before {
+		.et_pb_divider_3:before,
+		.et_pb_divider_6:before,
+		.et_pb_divider_5:before {
 			width: auto;
 			top: 239px;
 			right: 0;
@@ -18207,7 +18261,25 @@
 
 		.et_pb_divider_2 {
 			background-position: center top;
+			background-image: url(wp-content/uploads/2020/08/pexels-anete-lusina-4792285.jpg);
+			border-radius: 5px 5px 5px 5px;
+			overflow: hidden;
+			padding-top: 239px;
+			padding-bottom: 239px
+		}
+
+		.et_pb_divider_5 {
+			background-position: center top;
 			background-image: url(wp-content/uploads/2020/08/pexels-lukas-669621.jpg);
+			border-radius: 5px 5px 5px 5px;
+			overflow: hidden;
+			padding-top: 239px;
+			padding-bottom: 239px
+		}
+
+		.et_pb_divider_6 {
+			background-position: center top;
+			background-image: url(wp-content/uploads/2020/08/pexels-pixabay-45842.jpg);
 			border-radius: 5px 5px 5px 5px;
 			overflow: hidden;
 			padding-top: 239px;
@@ -18393,7 +18465,9 @@
 			margin-right: 0 !important
 		}
 
-		.et_pb_divider_2.et_pb_module {
+		.et_pb_divider_2.et_pb_module,
+		.et_pb_divider_6.et_pb_module,
+		.et_pb_divider_5.et_pb_module {
 			margin-left: 0 !important;
 			margin-right: auto !important
 		}
@@ -18438,7 +18512,9 @@
 			}
 
 			.et_pb_divider_2,
-			.et_pb_divider_3 {
+			.et_pb_divider_6,
+			.et_pb_divider_3,
+			.et_pb_divider_5 {
 				max-width: 460px
 			}
 
@@ -18601,7 +18677,9 @@
 
 			.et_pb_divider_0,
 			.et_pb_divider_2,
-			.et_pb_divider_3 {
+			.et_pb_divider_6,
+			.et_pb_divider_3,
+			.et_pb_divider_5 {
 				max-width: 100%
 			}
 
@@ -18632,6 +18710,8 @@
 			.et_pb_divider_0.et_pb_module,
 			.et_pb_divider_1.et_pb_module,
 			.et_pb_divider_2.et_pb_module,
+			.et_pb_divider_6.et_pb_module,
+			.et_pb_divider_5.et_pb_module,
 			.et_pb_divider_3.et_pb_module {
 				margin-left: auto !important;
 				margin-right: auto !important
@@ -18713,7 +18793,10 @@
 			.et_pb_blurb_6 .et_pb_main_blurb_image .et-pb-icon,
 			.et_pb_blurb_7 .et_pb_main_blurb_image .et-pb-icon,
 			.et_pb_blurb_8 .et_pb_main_blurb_image .et-pb-icon,
-			.et_pb_blurb_9 .et_pb_main_blurb_image .et-pb-icon {
+			.et_pb_blurb_9 .et_pb_main_blurb_image .et-pb-icon,
+			.et_pb_blurb_13 .et_pb_main_blurb_image .et-pb-icon,
+			.et_pb_blurb_14 .et_pb_main_blurb_image .et-pb-icon,
+			.et_pb_blurb_15 .et_pb_main_blurb_image .et-pb-icon {
 				border-right-width: 10px;
 				border-right-color: transparent
 			}
@@ -18819,6 +18902,8 @@
 			.et_pb_divider_0.et_pb_module,
 			.et_pb_divider_1.et_pb_module,
 			.et_pb_divider_2.et_pb_module,
+			.et_pb_divider_6.et_pb_module,
+			.et_pb_divider_5.et_pb_module,
 			.et_pb_divider_3.et_pb_module {
 				margin-left: auto !important;
 				margin-right: auto !important
@@ -18909,15 +18994,6 @@
 		content="Teamwork, Cabinet de formation et de conseil à Casablanca. Nous sommes spécialisés en Management, Ressources Humaines et efficacité professionnelle." />
 	<meta property="og:url" content="https://www.twc.ma/" />
 	<meta property="og:site_name" content="TEAMWORK" />
-	<meta property="article:modified_time" content="2022-03-09T13:14:30+00:00" />
-	<meta property="og:image" content="wp-content/uploads/2017/02/Teamwork-logo-metiers-v-140514-bicubic.png" />
-	<meta property="og:image:width" content="1920" />
-	<meta property="og:image:height" content="1120" />
-	<meta property="og:image:type" content="image/png" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:label1" content="Durée de lecture estimée" />
-	<meta name="twitter:data1" content="13 minutes" />
-
 
 	<link rel='dns-prefetch' href='http://use.fontawesome.com/' />
 
@@ -18939,7 +19015,7 @@
 	<style id='font-awesome-official-v4shim-inline-css' type='text/css'></style>
 	<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
 		src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js' defer></script>
-	
+
 	<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
 		src='wp-content/cache/min/1/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public8ad3.js?ver=1655710283'
 		id='cookie-law-info-js' defer></script>
@@ -19155,37 +19231,37 @@
 						<nav id="top-menu-nav">
 							<ul id="top-menu" class="nav">
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237034"><a
-										href="qui-sommes-nous/index.html">Qui sommes-nous</a></li>
+										href="qui-sommes-nous/">Qui sommes-nous</a></li>
 								<li
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-237036">
-									<a href="professionnels/index.html">Professionnels</a>
+									<a href="professionnels/">Professionnels</a>
 									<ul class="sub-menu">
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237449">
-											<a href="formations/index.html">Formations</a>
+											<a href="formations/">Formations</a>
 										</li>
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237448">
-											<a href="conseil/index.html">Conseil</a>
+											<a href="conseil/">Conseil</a>
 										</li>
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237999">
-											<a href="bilans-de-competences/index.html">Bilans de compétences</a>
+											<a href="bilans-de-competences/">Bilans de compétences</a>
 										</li>
 									</ul>
 								</li>
 								<li
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-237035">
-									<a href="particuliers/index.html">Particuliers</a>
+									<a href="particuliers/">Particuliers</a>
 									<ul class="sub-menu">
 										<li
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238025">
-											<a href="bilans-de-competences/index.html">Bilans de compétences</a>
+											<a href="bilans-de-competences/">Bilans de compétences</a>
 										</li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237037"><a
-										href="contact/index.html">Contact</a></li>
+										href="contact/">Contact</a></li>
 							</ul>
 						</nav>
 
@@ -19251,7 +19327,7 @@
 
 
 													<div class="et_pb_text_inner">
-														<h1>Cabinet de conseil<br /> et de formation à Casablanca</h1>
+														<h1>Cabinet de conseil<br /> et de formation</h1>
 													</div>
 												</div>
 												<div
@@ -19261,16 +19337,16 @@
 
 
 													<div class="et_pb_text_inner">
-														<p>Teamwork est un Cabinet de conseil et de formation
-															spécialisé dans toutes les prestations qui relèvent des
-															Ressources Humaines, du management des personnes et des
-															équipes.</p>
+														<p>Teamwork Consulting est un cabinet de conseil en
+															organisation, management et ressources humaines qui
+															accompagne les équipes dirigeantes dans un souci
+															permanent de l’accélération de la performance.</p>
 													</div>
 												</div>
 												<div
 													class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module ">
 													<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-														href="qui-sommes-nous/index.html">En savoir +</a>
+														href="qui-sommes-nous/">En savoir +</a>
 												</div>
 												<div
 													class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
@@ -19279,14 +19355,13 @@
 
 
 													<div class="et_pb_blurb_content">
-														<div class="et_pb_main_blurb_image"><a
-																href="contact/index.html"><span
+														<div class="et_pb_main_blurb_image"><a href="contact/"><span
 																	class="et_pb_image_wrap"><span
 																		class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone et-pb-icon"></span></span></a>
 														</div>
 														<div class="et_pb_blurb_container">
 															<h4 class="et_pb_module_header"><a
-																	href="contact/index.html">Contactez-nous</a></h4>
+																	href="contact/">Contactez-nous</a></h4>
 
 														</div>
 													</div>
@@ -19321,7 +19396,7 @@
 
 
 													<div class="et_pb_text_inner">
-														<p>formations à Casablanca</p>
+														<p>formations</p>
 													</div>
 												</div>
 												<div
@@ -19443,7 +19518,8 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Management</span></h4>
+															<h4 class="et_pb_module_header"><span>Développement
+																	Personnel &amp; professionnel</span></h4>
 
 														</div>
 													</div>
@@ -19457,8 +19533,7 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Ressources
-																	Humaines</span></h4>
+															<h4 class="et_pb_module_header"><span>Management</span></h4>
 
 														</div>
 													</div>
@@ -19472,8 +19547,8 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Relations
-																	sociales</span></h4>
+															<h4 class="et_pb_module_header"><span>Management de
+																	projet</span></h4>
 
 														</div>
 													</div>
@@ -19487,8 +19562,23 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Communication et
-																	management de soi</span></h4>
+															<h4 class="et_pb_module_header"><span>Ressources
+																	humaines</span></h4>
+
+														</div>
+													</div>
+												</div>
+												<div
+													class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_13 blurb_activites et_animated et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_blurb_content">
+
+														<div class="et_pb_blurb_container">
+															<h4 class="et_pb_module_header"><span>Santé &amp; sécurité
+																	au travail</span></h4>
 
 														</div>
 													</div>
@@ -19509,8 +19599,8 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Audit et
-																	diagnostic</span></h4>
+															<h4 class="et_pb_module_header"><span>Finance, Audit
+																	&amp; Contrôle de Gestion</span></h4>
 
 														</div>
 													</div>
@@ -19524,8 +19614,7 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Organisation et
-																	stratégie</span></h4>
+															<h4 class="et_pb_module_header"><span>Marketing</span></h4>
 
 														</div>
 													</div>
@@ -19539,7 +19628,8 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span> Accompagnement</span>
+															<h4 class="et_pb_module_header"><span>Digital
+																	Marketing</span>
 															</h4>
 
 														</div>
@@ -19554,8 +19644,23 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Gestion des
-																	compétences</span></h4>
+															<h4 class="et_pb_module_header"><span>Commercial &amp;
+																	vente</span></h4>
+
+														</div>
+													</div>
+												</div>
+												<div
+													class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_14 blurb_activites et_animated et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_blurb_content">
+
+														<div class="et_pb_blurb_container">
+															<h4 class="et_pb_module_header"><span>Assesment &amp;
+																	Profilage individuel</span></h4>
 
 														</div>
 													</div>
@@ -19576,8 +19681,9 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Mediation
-																	professionnelle</span></h4>
+															<h4 class="et_pb_module_header"><span>Commerce
+																	International, Logistique &amp; Supply chain</span>
+															</h4>
 
 														</div>
 													</div>
@@ -19591,7 +19697,7 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Coachings </span></h4>
+															<h4 class="et_pb_module_header"><span>Achat</span></h4>
 
 														</div>
 													</div>
@@ -19605,8 +19711,7 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Bilan de
-																	compétences</span></h4>
+															<h4 class="et_pb_module_header"><span>Droit</span></h4>
 
 														</div>
 													</div>
@@ -19620,8 +19725,24 @@
 													<div class="et_pb_blurb_content">
 
 														<div class="et_pb_blurb_container">
-															<h4 class="et_pb_module_header"><span>Bilan de
-																	carrière</span></h4>
+															<h4 class="et_pb_module_header"><span>Bureautique</span>
+															</h4>
+
+														</div>
+													</div>
+												</div>
+												<div
+													class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_15 blurb_activites et_animated et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_blurb_content">
+
+														<div class="et_pb_blurb_container">
+															<h4 class="et_pb_module_header"><span>Convention &amp;
+																	Teambuilding</span>
+															</h4>
 
 														</div>
 													</div>
@@ -19677,18 +19798,10 @@
 
 
 													<div class="et_pb_text_inner">
-														<p>Nos équipes sont constituées en fonction de vos besoins
-															réels, en nombre et en durée ; vous êtes assurés d’obtenir
-															l’exacte réponse à vos besoins.</p>
-														<p>L’équipe qui vous est dédiée est ainsi exclusivement composée
-															de spécialistes dans chaque domaine d’intervention choisi.
-														</p>
-														<p>Et, pour conférer une efficacité maximale à nos interventions
-															sur le terrain, nos consultants sont continuellement formés.
-														</p>
-														<p>Nous parlons en effet le même langage : nous nous imposons le
-															même niveau de qualité que celui que nous offrons à nos
-															clients. Notre certificat ISO 9001 en est le fondement.</p>
+														<p>Nos consultants et formateurs comptent à leur actif une
+															expérience minimale de 10 ans d'expérience dans les métiers
+															de l'organisation et du conseil et formation tant dans les
+															PME/PMI que les grands groupes multinationales.</p>
 													</div>
 												</div>
 											</div>
@@ -19715,6 +19828,176 @@
 
 
 									</div>
+
+									<div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
+
+										<div
+											class="et_pb_row et_pb_row_7 verticle-align et_pb_equal_columns et_pb_gutters2">
+											<div
+												class="et_pb_column et_pb_column_1_2 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+												<div
+													class="et_pb_module et_pb_divider_5 et_pb_space et_pb_divider_hidden">
+													<div class="et_pb_divider_internal"></div>
+												</div>
+											</div>
+											<div
+												class="et_pb_column et_pb_column_1_2 et_pb_column_13 et_animated  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+												<div
+													class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_text_inner">
+														<p>TEAMWORK, Processus et organisation.</p>
+													</div>
+												</div>
+												<div
+													class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_text_inner">
+														<h3><span style="color: #ec6726;">Processus et organisation
+																:</span> les clés de la performance durable</h3>
+													</div>
+												</div>
+												<div
+													class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_text_inner">
+														<p>
+															Grâce a notre expérience et à la mise en œuvre de notre
+															méthodologie éprouvée dans la
+															transformation des organisations, aussi bien auprés de
+															grands groupes internationaux qu’auprés
+															de PME-PMI, Teamwork Consulting vous apporte des solutions
+															optimales et efficientes permettant
+															d’améliorer votre compétitivité et votre performance
+															opérationnelle.
+														</p>
+														<p>Notre démarche du conseil associe à la fois la mise en œuvre
+															de méthodologies novatrices, la
+															maîtrise fonctionnelle et l'implication positive de tous les
+															acteurs de l’entreprise.</p>
+														<p>Teamwork Consulting accompagne les dirigeants dans la
+															redéfinition de leurs processus
+															opérationnels et leurs interactions, la clarification des
+															missions, rôles et responsabilités, dans le but
+															de favoriser l'agilité des structures, l’efficience et
+															l'excellence opérationnelle.</p>
+														<p>Nous vous aidons à améliorer vos processus pour gagner en
+															efficacité, et à maitriser durablement
+															l'accélération de votre performance business.</p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="et_pb_section et_pb_section_5 et_section_regular">
+
+										<div
+											class="et_pb_row et_pb_row_8 verticle-align et_pb_equal_columns et_pb_gutters2">
+											<div
+												class="et_pb_column et_pb_column_1_2 et_pb_column_14 et_animated  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+												<div
+													class="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_text_inner">
+														<p>TEAMWORK, Le management par objectifs.</p>
+													</div>
+												</div>
+												<div
+													class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+													<div class="et_pb_text_inner">
+														<h3><span style="color: #ec6726;">Le management par objectifs
+																:</span> une exigence au service de votre capital humain
+														</h3>
+													</div>
+												</div>
+												<div
+													class="et_pb_module et_pb_text et_pb_text_18  et_pb_text_align_left et_pb_bg_layout_light">
+
+													<div class="et_pb_text_inner">
+														<p>
+															Nous sommes convaincus que chaque entreprise est unique,
+															notamment par sa composition
+															interne, les spécificités de son capital humain, et plus
+															particuligrement de son équipe dirigeante.</p>
+														<p>
+															En effet, les méthodes managériales des organisions sont
+															souvent à l’origine du succés rencontré
+															dans les entreprises les plus performantes.
+														</p>
+														<p>Notre expérience et notre approche méthodologique dans le
+															conseil en management nous
+															permettent d’accompagner les dirigeants sur le chemin de la
+															réussite, par la mise en place d’un
+															système de management par objectifs, particuligrement adapté
+															à leur contexte spécifique et à
+															leur personnalite.
+														</p>
+														<p>
+															Comment fédérer ses collaborateurs et insuffler de
+															l’enthousiasme autour d’un projet commun ?...
+															Comment augmenter la liberté individuelle sans sacrifier la
+															discipline ?... Comment maîtriser le
+															facteur humain dans la conduite du changement ?.. Autant de
+															questions au cœur des
+															préoccupations managériales, auxquelles Teamwork Consulting
+															s’emploie a apporter des
+															solutions adéquates, basées sur une approche rigoureuse et
+															éprouvée.
+														</p>
+													</div>
+												</div>
+											</div>
+											<div
+												class="et_pb_column et_pb_column_1_2 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+												<div
+													class="et_pb_module et_pb_divider_3 et_pb_space et_pb_divider_hidden">
+													<div class="et_pb_divider_internal"></div>
+												</div>
+											</div>
+
+
+
+
+										</div>
+
+
+									</div>
+
 									<div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
 
 
@@ -19748,7 +20031,7 @@
 
 
 													<div class="et_pb_text_inner">
-														<p>TEAMWORK, à votre écoute.</p>
+														<p>TEAMWORK, des outils à la pointe de la technologie.</p>
 													</div>
 												</div>
 												<div
@@ -19758,8 +20041,8 @@
 
 
 													<div class="et_pb_text_inner">
-														<h3>De l’expertise <span style="color: #ec6726;">et de la
-																mesure</span></h3>
+														<h3>Des outils innovants et performants pour dénicher vos <span
+																style="color: #ec6726;">futurs talents</span></h3>
 													</div>
 												</div>
 												<div
@@ -19768,20 +20051,25 @@
 
 
 
-													<div class="et_pb_text_inner">Votre entreprise fait face à de
-														nombreux challenges et à des situations parfois critiques. Or,
-														pour avancer efficacement, vous ne pouvez pas vous satisfaire de
-														conseil et de formations toutes faites.</p>
-														<p>C’est pourquoi nous préférons réfléchir avec vous et pour
-															vous, afin de relever vos challenges.</p>
-														<p>Nous tenons compte de vos enjeux, de vos contextes
-															économiques et humains.</p>
-														<p>Nous vous accompagnons avec un regard nouveau, une écoute,
-															une approche réfléchie, une démarche structurée,
-															structurante et des moyens adaptés pour améliorer et
-															soutenir la performance globale de votre entreprise par le
-															développement harmonieux des ressources humaines et de son
-															organisation.
+													<div class="et_pb_text_inner">
+														<p>
+															Convaincu que le potentiel d'une entreprise réside dans la
+															gestion de son capital humain,
+															Teamwork Consulting accompagne ses clients dans le
+															recrutement, l'évaluation et la sélection de
+															leurs futurs talents.
+														</p>
+														<p>Tous nos consultants bénéficient d’une expérience avérée et
+															d’un professionnalisme RH de haut niveau, aussi bien sur le
+															plan des techniques de recrutement que sur celui de
+															l’expertise métier, nécessitant une parfaite connaissance
+															des enjeux attenant a chaque secteur d’activité. Face à un
+															contexte économique et social en pleine mutation et a la
+															prolifération des cabinets de recrutements, Teamwork
+															Consulting, véritable découvreur de talents, se différencie
+															en apportant une réelle valeur ajoutée par une approche
+															unique et éprouvee, garante de résultats concrets et
+															pérennes.</p>
 													</div>
 												</div>
 											</div>
@@ -19825,8 +20113,8 @@
 
 
 													<div class="et_pb_text_inner">
-														<h3>Conseil Coaching et <span
-																style="color: #ec6726;">Formation</span></h3>
+														<h3>Développez les compétences et gagnez en <span
+																style="color: #ec6726;">performance</span></h3>
 													</div>
 												</div>
 												<div
@@ -19835,11 +20123,61 @@
 
 
 
-													<div class="et_pb_text_inner">Nos prestations s’inscrivent au cœur
-														de votre démarche d’entreprise.</p>
-														<p>De plus, nous vérifions systématiquement leur efficacité dans
-															le temps : elles sont d’autant plus pertinentes, cohérentes,
-															durablement mieux implantées et reprises par tous.
+													<div class="et_pb_text_inner">
+														<p>
+															Parce que la formation des collaborateurs est un levier
+															stratégique majeur dans la performance des
+															organisations, Teamwork Consulting accompagne les dirigeants
+															d'entreprise et les directions RH
+															dans l'élaboration et l'optimisation de leurs plans de
+															formation et dans le développement des
+															compétences de leur capital humain.</p>
+														<p>
+															Notre expertise et notre expérience reconnue dans
+															l'ingénierie de formation, ainsi que notre réseau
+															de partenaires nationaux et internationaux, vous apportent
+															la garantie d’un partenariat hautement
+															performant et une réelle valeur ajoutée pour votre
+															entreprise.
+														</p>
+														<p>Engagés auprés de nos partenaires dans la durée, nos
+															consultants spécialisés sont à vos côtés tout
+															au long de votre « année formation », notamment dans :
+														<ul>
+															<li>La sélection des prestataires de formation.</li>
+															<li>L'édification du plan de formation et des objectifs à
+																atteindre.</li>
+															<li>L'évaluation qualitative et quantitative des résultats
+																obtenus.</li>
+															<li>La mise en place de procédures internes de gestion de la
+																formation.</li>
+															<li>L'initiation de l'un de vos collaborateurs RH à la
+																gestion administrative du plan de formation.</li>
+														</ul>
+														</p>
+														<p>
+															Connaissant parfaitement les mécanismes d'aide à la
+															formation continue et les spécificités des
+															organismes publiques, Teamwork Consulting vous apporte un
+															réel soutient et un accom-
+															pagnement efficient dans vos démarches administratives
+															GIAC-OFPPT, afin de bénéficier de
+															remboursements des :
+														<ul>
+															<li>Missions d'ingénierie de formation à hauteur de 70 %.
+															</li>
+															<li>Formations planifiées à hauteur de 70 %.</li>
+															<li>Formations non planifiées à hauteur de 40 %.</li>
+														</ul>
+														</p>
+														<p>Rompu aux méthodologies innovantes et aux technologies
+															d’avenir, Teamwork Consulting
+															propose aux entreprises des solutions e-learning, ou la mise
+															en place de webinars (séminaires virtuels), permettant la
+															formation simultanée d'un groupe de
+															collaborateurs géographiquement
+															dispersés.
+														</p>
 													</div>
 												</div>
 											</div>
@@ -19850,7 +20188,7 @@
 
 
 												<div
-													class="et_pb_module et_pb_divider_3 et_pb_space et_pb_divider_hidden">
+													class="et_pb_module et_pb_divider_6 et_pb_space et_pb_divider_hidden">
 													<div class="et_pb_divider_internal"></div>
 												</div>
 											</div>
@@ -19862,6 +20200,10 @@
 
 
 									</div>
+
+
+
+
 									<div class="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular">
 
 
@@ -20117,7 +20459,7 @@
 													<div class="et_pb_text_inner">
 														<p>Vous avez une question ? <strong><span
 																	style="text-decoration: underline;"><a
-																		href="contact/index.html">Contactez-nous
+																		href="contact/">Contactez-nous
 																		!</a></span></strong></p>
 													</div>
 												</div>
@@ -20256,12 +20598,10 @@
 
 
 
-													<label for="name"
-														class="et_pb_contact_form_label">Nom</label>
-													<input type="text" id="name" class="input" value=""
-														name="name" data-required_mark="required"
-														data-field_type="input" data-original_id="name"
-														placeholder="Nom" required>
+													<label for="name" class="et_pb_contact_form_label">Nom</label>
+													<input type="text" id="name" class="input" value="" name="name"
+														data-required_mark="required" data-field_type="input"
+														data-original_id="name" placeholder="Nom" required>
 												</p>
 												<p class="et_pb_contact_field et_pb_contact_field_1_tb_footer et_pb_contact_field_half et_pb_contact_field_last"
 													data-id="email" data-type="email">
@@ -20269,10 +20609,9 @@
 
 
 
-													<label for="email"
-														class="et_pb_contact_form_label">Adresse e-mail</label>
-													<input type="email" id="email" class="input"
-														value="" name="email"
+													<label for="email" class="et_pb_contact_form_label">Adresse
+														e-mail</label>
+													<input type="email" id="email" class="input" value="" name="email"
 														data-required_mark="required" data-field_type="email"
 														data-original_id="email" placeholder="Adresse e-mail" required>
 												</p>
@@ -20284,14 +20623,15 @@
 
 													<label for="message"
 														class="et_pb_contact_form_label">Message</label>
-													<textarea name="message"
-														id="message" class="et_pb_contact_message input"
+													<textarea name="message" id="message"
+														class="et_pb_contact_message input"
 														data-required_mark="required" data-field_type="text"
-														data-original_id="message" placeholder="Message" required></textarea>
+														data-original_id="message" placeholder="Message"
+														required></textarea>
 												</p>
 												<div class="et_contact_bottom_container">
 
-													<button type="submit" 
+													<button type="submit"
 														class="et_pb_contact_submit et_pb_button">Envoyer un
 														message</button>
 												</div>
@@ -20608,8 +20948,385 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		var et_animation_data = [{ "class": "et_pb_column_0", "style": "slideTop", "repeat": "once", "duration": "1500ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_5", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_6", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "750ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_7", "style": "fold", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_1", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_2", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_3", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_4", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_8", "style": "fold", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_5", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_6", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_7", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_8", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_9", "style": "fold", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_9", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_10", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_11", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_12", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_10", "style": "slideLeft", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_13", "style": "slideRight", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_14", "style": "slideLeft", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_23", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_24", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_25", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_26", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_27", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
-		var et_link_options_data = [{ "class": "et_pb_text_5", "url": "professionnels", "target": "_self" }, { "class": "et_pb_text_6", "url": "particuliers", "target": "_self" }, { "class": "et_pb_blurb_1", "url": "formations\/#management", "target": "_self" }, { "class": "et_pb_blurb_2", "url": "formations\/#RH", "target": "_self" }, { "class": "et_pb_blurb_3", "url": "formations\/#relationsSociales", "target": "_self" }, { "class": "et_pb_blurb_4", "url": "formations\/#managementDeSoi", "target": "_self" }, { "class": "et_pb_blurb_5", "url": "conseil\/#ancreAudit", "target": "_self" }, { "class": "et_pb_blurb_6", "url": "conseil\/#organisationStrategie", "target": "_self" }, { "class": "et_pb_blurb_7", "url": "conseil\/#acompagnement", "target": "_self" }, { "class": "et_pb_blurb_8", "url": "conseil\/#gestionCompetences", "target": "_self" }, { "class": "et_pb_blurb_9", "url": "conseil\/#mediationPro", "target": "_self" }, { "class": "et_pb_blurb_10", "url": "conseil\/#coaching", "target": "_self" }, { "class": "et_pb_blurb_11", "url": "bilans-de-competences\/", "target": "_self" }, { "class": "et_pb_blurb_12", "url": "courses\/bilan-de-carriere\/", "target": "_self" }];
+		var et_animation_data = [
+			{
+				"class": "et_pb_column_0",
+				"style": "slideTop",
+				"repeat": "once",
+				"duration": "1500ms",
+				"delay": "0ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_text_5",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_text_6",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "750ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_7",
+				"style": "fold",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "0ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_1",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_2",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_3",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_4",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_8",
+				"style": "fold",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "0ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_5",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_6",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_7",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_8",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_9",
+				"style": "fold",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "0ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_9",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_10",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_11",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_12",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_13",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_14",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_blurb_15",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_10",
+				"style": "slideLeft",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_13",
+				"style": "slideRight",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_14",
+				"style": "slideLeft",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_23",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_24",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_25",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_26",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			},
+			{
+				"class": "et_pb_column_27",
+				"style": "slideBottom",
+				"repeat": "once",
+				"duration": "1000ms",
+				"delay": "500ms",
+				"intensity": "50%",
+				"starting_opacity": "0%",
+				"speed_curve": "ease-in-out"
+			}
+		];
+		var et_link_options_data = [
+			{
+				"class": "et_pb_text_5",
+				"url": "professionnels",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_text_6",
+				"url": "particuliers",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_1",
+				"url": "formations\/#dev_personnel",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_2",
+				"url": "formations\/#Management",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_3",
+				"url": "formations\/#Management_de_projet",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_4",
+				"url": "formations\/#Ressources_humaines",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_5",
+				"url": "formations\/#Finance_Audit",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_6",
+				"url": "formations\/#Marketing",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_7",
+				"url": "formations\/#Digital_Marketing",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_8",
+				"url": "formations\/#Commercial_vente",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_9",
+				"url": "formations\/#Commerce_International",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_10",
+				"url": "formations\/#Achat",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_11",
+				"url": "formations\/#Droit",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_12",
+				"url": "formations\/#Bureautique",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_13",
+				"url": "formations\/#Sante_securite",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_14",
+				"url": "formations\/#Assesment_profilage",
+				"target": "_self"
+			},
+			{
+				"class": "et_pb_blurb_15",
+				"url": "formations\/#Convention_Teambuilding",
+				"target": "_self"
+			}
+		];
 	</script>
 	<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
 	$('.et-social-instagram').addClass('fab fa-linkedin-in').removeClass('et-social-instagram');
