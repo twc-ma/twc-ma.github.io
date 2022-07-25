@@ -371,7 +371,7 @@ select {
     display: none !important
 }
 
-.fa-linkedin-in {
+.fa-linkedin-in, .fa-instagram {
     cursor: pointer
 }
 

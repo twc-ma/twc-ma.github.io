@@ -579,7 +579,7 @@
 	
 	
 	
-		href="../../wp-json/oembed/1.0/embedd8bd?url=https%3A%2F%2Ftwc.ma%2Fcourses%2Fbilan-de-carriere%2F&amp;format=xml" />
+		
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link rel="icon" href="../../wp-content/uploads/2017/01/cropped-favicon2-32x32.png" sizes="32x32" />
 	<link rel="icon" href="../../wp-content/uploads/2017/01/cropped-favicon2-192x192.png" sizes="192x192" />
@@ -735,12 +735,17 @@
 						<ul class="et-social-icons">
 
 							<li class="et-social-icon et-social-facebook">
-								<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317" class="icon">
+								<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317" target="_blank" class="icon">
 									<span>Facebook</span>
 								</a>
 							</li>
 							<li class="et-social-icon fab fa-linkedin-in">
 								<a href="https://www.linkedin.com/company/teamwork-consulting/" class="icon">
+									<span>Instagram</span>
+								</a>
+							</li>
+							<li class="et-social-icon fab fa-instagram">
+								<a href="https://www.instagram.com/teamwork.consulting/" class="icon">
 									<span>Instagram</span>
 								</a>
 							</li>
@@ -754,11 +759,11 @@
 							<ul class="et-social-icons">
 
 								<li class="et-social-icon et-social-facebook">
-									<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317" class="icon">
+									<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317" target="_blank" class="icon">
 										<span>Facebook</span>
 									</a>
 								</li>
-								<li class="et-social-icon et-social-instagram">
+								<li class="et-social-icon fab fa-linkedin-in">
 									<a href="https://www.linkedin.com" class="icon">
 										<span>Instagram</span>
 									</a>
@@ -1923,9 +1928,13 @@
 	<script>
 		$('.et-social-instagram').addClass('fab fa-linkedin-in').removeClass('et-social-instagram');
 
-		$('.fa-linkedin-in').click(function () {
-			window.open("https://www.linkedin.com/company/teamwork-consulting/");
-		})
+		$('.fa-linkedin-in').click(function() {
+		window.open("https://www.linkedin.com/company/teamwork-consulting/");
+	});
+
+	$('.fa-instagram').click(function() {
+		window.open("https://www.instagram.com/teamwork.consulting/");
+	});
 
 	//$('.tutor-course-purchase-btn').click(function(){
 //		window.location.href = 'https://twc.ma/contact/'
