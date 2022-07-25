@@ -5985,8 +5985,8 @@
  #et-info-phone:before {
  	content: "\e090";
  	position: relative;
- 	top: 2px;
- 	margin-right: 2px
+ 	top: 1px;
+ 	margin-right: 3px
  }
 
  #et-info-phone {
@@ -5995,7 +5995,9 @@
 
  #et-info-email:before {
  	content: "\e076";
- 	margin-right: 4px
+ 	margin-right: 4px;
+ 	position: relative;
+ 	top: 2px;
  }
 
  #top-header .et-social-icons {
@@ -6232,10 +6234,16 @@
  }
 
  @media (max-width:767px) {
-	#et-info .et-social-icons {
-		position: absolute;
-		right: -35px;
-	}
+ 	#et-info .et-social-icons {
+ 		position: absolute;
+ 		right: -35px;
+ 		bottom: 10px;
+ 	}
+
+ 	#et-info {
+ 		float: none !important;
+ 		margin-left: -35px;
+ 	}
 
  	#et-secondary-menu .et_duplicate_social_icons {
  		display: inline-block
