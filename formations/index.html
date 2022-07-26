@@ -8303,7 +8303,8 @@
 			.et_pb_section.et_pb_equal_columns>.et_pb_row {
 				display: -webkit-box;
 				display: -ms-flexbox;
-				display: flex
+				display: flex;
+				padding: 0 20px;
 			}
 
 			.rtl .et_pb_row.et_pb_equal_columns,
@@ -17408,7 +17409,8 @@
 		.et_pb_text_5.et_pb_module,
 		.et_pb_text_6.et_pb_module,
 		.et_pb_text_7.et_pb_module {
-			margin-right: auto !important
+			margin-right: auto !important;
+			margin-left: auto !important;
 		}
 
 		@media only screen and (min-width:981px) {
@@ -17893,8 +17895,7 @@
 	<link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" href="../img/favicon-192x192.png" sizes="192x192" />
 	<link rel="apple-touch-icon" href="../img/favicon-180x180.png" />
-	<meta name="msapplication-TileImage"
-		content="../../img/favicon-270x270.png" />
+	<meta name="msapplication-TileImage" content="../../img/favicon-270x270.png" />
 	<style id="et-critical-inline-css"></style>
 	<style id="et-core-unified-237415-cached-inline-styles"></style><noscript>
 		<style id="rocket-lazyload-nojs-css">
@@ -18093,8 +18094,8 @@
 					<div class="logo_container">
 						<span class="logo_helper"></span>
 						<a href="..">
-							<img src="../img/logo-transparent.png" width="257" height="110"
-								alt="Teamwork" id="logo" data-height-percentage="80" />
+							<img src="../img/logo-transparent.png" width="257" height="110" alt="Teamwork" id="logo"
+								data-height-percentage="80" />
 						</a>
 					</div>
 					<div id="et-top-navigation" data-height="100" data-fixed-height="100">
@@ -18970,6 +18971,23 @@
 
 
 								</div>
+								<style>
+									.et_pb_column_1_5 .et_pb_module,
+									.et_pb_column_1_5 .et_pb_module .et_pb_text_inner {
+										height: 100%;
+									}
+
+									.et_pb_column_1_5 .et_pb_module .et_pb_text_inner {
+										display: flex;
+										flex-direction: column;
+										justify-content: space-between;
+									}
+
+									.et_pb_column_1_5 .et_pb_module .et_pb_text_inner .et_pb_text_testimonial {
+										text-align: right;
+										margin-bottom: 20px;
+									}
+								</style>
 								<div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
 
 
@@ -19028,6 +19046,7 @@
 													<p>Très bonne formation qui permet d’acquérir de l’expérience et
 														des astuces pour faciliter le management au quotidien.
 														Formation très vivante et basée sur le partage.</p>
+													<p class="et_pb_text_testimonial"><strong>Fouad M.</strong></p>
 												</div>
 											</div>
 										</div>
@@ -19047,6 +19066,7 @@
 													<p>Très bonne approche : les thèmes sont abordés en fonction de
 														la progression définie mais aussi en prenant le temps de
 														répondre aux questions ou interrogations.</p>
+													<p class="et_pb_text_testimonial"><strong>Reda F.</strong></p>
 												</div>
 											</div>
 										</div>
@@ -19066,6 +19086,7 @@
 													<p>Formation très intéressante qui m’a apporté des connaissances
 														immédiatement utilisables en entreprise et qui me suivront
 														tout au long de ma carrière.</p>
+													<p class="et_pb_text_testimonial"><strong>Amal D.</strong></p>
 												</div>
 											</div>
 										</div>
@@ -19086,6 +19107,7 @@
 														outils et réponses concrètes tout en prenant de la hauteur
 														et en étant objectif. A l’écoute des participants sans parti
 														pris, interaction, passionné.</p>
+													<p class="et_pb_text_testimonial"><strong>Fahd E.</strong></p>
 												</div>
 											</div>
 										</div>
@@ -19107,6 +19129,7 @@
 														et se nourrir de nos expériences et difficultés pour
 														construire la formation et nous donner des outils pour
 														pouvoir évoluer et s’améliorer.</p>
+													<p class="et_pb_text_testimonial"><strong>Samia A.</strong></p>
 												</div>
 											</div>
 										</div>
@@ -19185,17 +19208,16 @@
 
 
 												<span class="et_pb_image_wrap "><img
-															src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-															alt="" title="Certification"
-															data-lazy-srcset="../img/HOXF04292.png"
-															data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 551px, 100vw"
-															class="wp-image-238098"
-															data-lazy-src="../img/HOXF04292.png" /><noscript><img
-																src="../img/HOXF04292.png" alt=""
-																title="Certification"
-																srcset="../img/HOXF04292.png"
-																sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 551px, 100vw"
-																class="wp-image-238098" /></noscript></span>
+														src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+														alt="" title="Certification"
+														data-lazy-srcset="../img/HOXF04292.png"
+														data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 551px, 100vw"
+														class="wp-image-238098"
+														data-lazy-src="../img/HOXF04292.png" /><noscript><img
+															src="../img/HOXF04292.png" alt="" title="Certification"
+															srcset="../img/HOXF04292.png"
+															sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 551px, 100vw"
+															class="wp-image-238098" /></noscript></span>
 											</div>
 										</div>
 										<div
@@ -19209,15 +19231,13 @@
 
 
 
-												<span class="et_pb_image_wrap "><img width="150"
-															height="150"
-															src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"
-															alt="" title="Certification" class="wp-image-237056"
-															data-lazy-src="../img/HOXF04292.png" /><noscript><img
-																width="150" height="150"
-																src="../img/HOXF04292.png" alt=""
-																title="Certification"
-																class="wp-image-237056" /></noscript></span>
+												<span class="et_pb_image_wrap "><img width="150" height="150"
+														src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"
+														alt="" title="Certification" class="wp-image-237056"
+														data-lazy-src="../img/HOXF04292.png" /><noscript><img
+															width="150" height="150" src="../img/HOXF04292.png" alt=""
+															title="Certification"
+															class="wp-image-237056" /></noscript></span>
 											</div>
 										</div>
 										<div
@@ -19231,20 +19251,17 @@
 
 
 
-												<span class="et_pb_image_wrap "><img width="200"
-															height="200"
-															src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E"
-															alt="" title="Certification"
-															data-lazy-srcset="../img/HOXF04292.png"
-															data-lazy-sizes="(max-width: 200px) 100vw, 200px"
-															class="wp-image-237058"
-															data-lazy-src="../img/HOXF04292.png" /><noscript><img
-																width="200" height="200"
-																src="../img/HOXF04292.png" alt=""
-																title="Certification"
-																srcset="../img/HOXF04292.png"
-																sizes="(max-width: 200px) 100vw, 200px"
-																class="wp-image-237058" /></noscript></span>
+												<span class="et_pb_image_wrap "><img width="200" height="200"
+														src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E"
+														alt="" title="Certification"
+														data-lazy-srcset="../img/HOXF04292.png"
+														data-lazy-sizes="(max-width: 200px) 100vw, 200px"
+														class="wp-image-237058"
+														data-lazy-src="../img/HOXF04292.png" /><noscript><img
+															width="200" height="200" src="../img/HOXF04292.png" alt=""
+															title="Certification" srcset="../img/HOXF04292.png"
+															sizes="(max-width: 200px) 100vw, 200px"
+															class="wp-image-237058" /></noscript></span>
 											</div>
 										</div>
 										<div
@@ -19258,20 +19275,17 @@
 
 
 
-												<span class="et_pb_image_wrap "><img width="200"
-															height="200"
-															src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E"
-															alt="" title="Certification"
-															data-lazy-srcset="../img/HOXF04292.png"
-															data-lazy-sizes="(max-width: 200px) 100vw, 200px"
-															class="wp-image-237054"
-															data-lazy-src="../img/HOXF04292.png" /><noscript><img
-																width="200" height="200"
-																src="../img/HOXF04292.png" alt=""
-																title="Certification"
-																srcset="../img/HOXF04292.png"
-																sizes="(max-width: 200px) 100vw, 200px"
-																class="wp-image-237054" /></noscript></span>
+												<span class="et_pb_image_wrap "><img width="200" height="200"
+														src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E"
+														alt="" title="Certification"
+														data-lazy-srcset="../img/HOXF04292.png"
+														data-lazy-sizes="(max-width: 200px) 100vw, 200px"
+														class="wp-image-237054"
+														data-lazy-src="../img/HOXF04292.png" /><noscript><img
+															width="200" height="200" src="../img/HOXF04292.png" alt=""
+															title="Certification" srcset="../img/HOXF04292.png"
+															sizes="(max-width: 200px) 100vw, 200px"
+															class="wp-image-237054" /></noscript></span>
 											</div>
 										</div>
 										<div
@@ -19285,15 +19299,13 @@
 
 
 
-												<span class="et_pb_image_wrap "><img width="160"
-															height="112"
-															src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%20112'%3E%3C/svg%3E"
-															alt="" title="Certification" class="wp-image-237052"
-															data-lazy-src="../img/HOXF04292.png" /><noscript><img
-																width="160" height="112"
-																src="../img/HOXF04292.png" alt=""
-																title="Certification"
-																class="wp-image-237052" /></noscript></span>
+												<span class="et_pb_image_wrap "><img width="160" height="112"
+														src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%20112'%3E%3C/svg%3E"
+														alt="" title="Certification" class="wp-image-237052"
+														data-lazy-src="../img/HOXF04292.png" /><noscript><img
+															width="160" height="112" src="../img/HOXF04292.png" alt=""
+															title="Certification"
+															class="wp-image-237052" /></noscript></span>
 											</div>
 										</div>
 										<div
@@ -19307,15 +19319,13 @@
 
 
 
-												<span class="et_pb_image_wrap "><img width="200"
-															height="120"
-															src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20120'%3E%3C/svg%3E"
-															alt="" title="Certification" class="wp-image-237055"
-															data-lazy-src="../img/HOXF04292.png" /><noscript><img
-																width="200" height="120"
-																src="../img/HOXF04292.png" alt=""
-																title="Certification"
-																class="wp-image-237055" /></noscript></span>
+												<span class="et_pb_image_wrap "><img width="200" height="120"
+														src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20120'%3E%3C/svg%3E"
+														alt="" title="Certification" class="wp-image-237055"
+														data-lazy-src="../img/HOXF04292.png" /><noscript><img
+															width="200" height="120" src="../img/HOXF04292.png" alt=""
+															title="Certification"
+															class="wp-image-237055" /></noscript></span>
 											</div>
 										</div>
 
@@ -19390,10 +19400,9 @@
 									<span class="et_pb_image_wrap "><img width="128" height="128"
 											src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20128%20128'%3E%3C/svg%3E"
 											alt="" title="technology8 (2)" class="wp-image-237026"
-											data-lazy-src="../img/HOXF04291.png" /><noscript><img
-												width="128" height="128"
-												src="../img/HOXF04291.png" alt=""
-												title="technology8 (2)" class="wp-image-237026" /></noscript></span>
+											data-lazy-src="../img/HOXF04291.png" /><noscript><img width="128"
+												height="128" src="../img/HOXF04291.png" alt="" title="technology8 (2)"
+												class="wp-image-237026" /></noscript></span>
 								</div>
 								<div
 									class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_center et_pb_bg_layout_light">
@@ -19442,8 +19451,7 @@
 
 									<div class="et_pb_contact">
 										<form class="et_pb_contact_form clearfix" method="post"
-											action="https://formsubmit.co/contact@twc.ma"
-											redirect="true">
+											action="https://formsubmit.co/contact@twc.ma" redirect="true">
 											<p class="et_pb_contact_field et_pb_contact_field_0_tb_footer et_pb_contact_field_half"
 												data-id="name" data-type="input">
 
