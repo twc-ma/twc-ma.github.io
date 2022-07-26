@@ -344,7 +344,7 @@ select {
 
 @media only screen and (min-width:981px) {
     #logo {
-        max-height: 80%;
+        max-height: 83%;
         margin-top: -60px;
         z-index: 999
     }

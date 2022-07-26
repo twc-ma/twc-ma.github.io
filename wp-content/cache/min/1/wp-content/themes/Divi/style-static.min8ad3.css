@@ -2886,7 +2886,7 @@
  	-webkit-transition: all .4s ease-in-out;
  	transition: all .4s ease-in-out;
  	margin-bottom: 0;
- 	max-height: 54%;
+ 	max-height: 76%;
  	display: inline-block;
  	float: none;
  	vertical-align: middle;
@@ -7216,7 +7216,8 @@
  	}
 
  	.et_pb_gutters2.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(2) {
- 		width: 38.2%
+ 		width: 38.2%;
+ 		margin-top: -45px;
  	}
 
  	.et_pb_gutters2.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(2) .fwidget {
@@ -7224,7 +7225,8 @@
  	}
 
  	.et_pb_gutters2.et_pb_footer_columns_2_5__3_5 .footer-widget:first-child {
- 		width: 38.2%
+ 		width: 38.2%;
+ 		margin-top: -45px;
  	}
 
  	.et_pb_gutters2.et_pb_footer_columns_2_5__3_5 .footer-widget:first-child .fwidget {
@@ -15153,7 +15155,8 @@
 
  	.et_pb_gutters2 .et_pb_column_2_5,
  	.et_pb_gutters2.et_pb_row .et_pb_column_2_5 {
- 		width: 38.2%
+ 		width: 38.2%;
+ 		margin-top: -45px;
  	}
 
  	.et_pb_gutters2 .et_pb_column_2_5 .et_pb_module,

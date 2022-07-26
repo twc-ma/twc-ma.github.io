@@ -121,10 +121,6 @@ body #page-container .et_pb_section .et_pb_contact_form_0_tb_footer.et_pb_contac
 }
 
 @media only screen and (min-width:981px) {
-
-    .et_pb_row_0_tb_footer,
-    body #page-container .et-db #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,
-    body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,
     body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row {
         width: 90%
     }
