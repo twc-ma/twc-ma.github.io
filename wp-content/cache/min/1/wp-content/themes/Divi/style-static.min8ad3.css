@@ -6047,6 +6047,7 @@
  }
 
  #et-info-email:hover,
+		#et-info-phone:hover,
  #et-secondary-menu>ul>li>a:hover {
  	opacity: .7;
  	-webkit-transition: all .4s ease-in-out;
@@ -6293,7 +6294,8 @@
  	text-decoration: none
  }
 
- .et-social-icons a:hover {
+ .et-social-icons a:hover,
+		#top-header .et-social-icons li:hover {
  	opacity: .7;
  	-webkit-transition: all .4s ease-in-out;
  	transition: all .4s ease-in-out
