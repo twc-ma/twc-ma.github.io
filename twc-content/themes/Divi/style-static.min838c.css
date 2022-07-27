@@ -7216,7 +7216,7 @@ body.et-twc-pre-3_8.admin-bar.et_fixed_nav #top-header {
 
 	.et_pb_gutters2.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(2) {
 		width: 38.2%;
-		margin-top: -45px;
+
 	}
 
 	.et_pb_gutters2.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(2) .fwidget {
@@ -7225,7 +7225,7 @@ body.et-twc-pre-3_8.admin-bar.et_fixed_nav #top-header {
 
 	.et_pb_gutters2.et_pb_footer_columns_2_5__3_5 .footer-widget:first-child {
 		width: 38.2%;
-		margin-top: -45px;
+
 	}
 
 	.et_pb_gutters2.et_pb_footer_columns_2_5__3_5 .footer-widget:first-child .fwidget {
@@ -9145,6 +9145,12 @@ body.uiwebview .section_has_divider {
 	position: relative;
 	z-index: 2;
 	min-height: 1px
+}
+
+.et_pb_column_0_tb_footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .et_pb_column--with-menu {
@@ -15412,12 +15418,7 @@ button.et_pb_menu__icon {
 	.et_pb_gutters2 .et_pb_column_2_5,
 	.et_pb_gutters2.et_pb_row .et_pb_column_2_5 {
 		width: 38.2%;
-		margin-top: -45px;
-	}
 
-	.et_pb_gutters2 .et_pb_column_2_5 .et_pb_module,
-	.et_pb_gutters2.et_pb_row .et_pb_column_2_5 .et_pb_module {
-		margin-bottom: 3.927%
 	}
 
 	.et_pb_gutters2 .et_pb_column_1_3,

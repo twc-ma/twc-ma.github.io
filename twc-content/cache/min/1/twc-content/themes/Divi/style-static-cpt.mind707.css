@@ -10540,6 +10540,12 @@ body.uiwebview .et-db #et-boc .et-l .section_has_divider {
 	min-height: 1px
 }
 
+.et_pb_column_0_tb_footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
 .et-db #et-boc .et-l .et_pb_column--with-menu {
 	z-index: 3
 }
@@ -15826,11 +15832,6 @@ body.et_pb_recaptcha_enabled .grecaptcha-badge {
 	.et-db #et-boc .et-l .et_pb_gutters2.et_pb_row .et_pb_column_2_5,
 	.et_pb_gutters2.et-db #et-boc .et-l .et_pb_column_2_5 {
 		width: 38.2%
-	}
-
-	.et-db #et-boc .et-l .et_pb_gutters2.et_pb_row .et_pb_column_2_5 .et_pb_module,
-	.et_pb_gutters2.et-db #et-boc .et-l .et_pb_column_2_5 .et_pb_module {
-		margin-bottom: 3.927%
 	}
 
 	.et-db #et-boc .et-l .et_pb_gutters2.et_pb_row .et_pb_column_1_3,
