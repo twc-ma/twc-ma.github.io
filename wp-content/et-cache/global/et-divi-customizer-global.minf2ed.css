@@ -376,7 +376,18 @@ select {
 .fa-facebook-f {
     position: relative;
     top: -2px;
-    right: -2px;
+    right: -6px;
+}
+
+.fa-instagram {
+    position: relative;
+    left: -4px;
+}
+
+.fa-facebook-f:before,
+.fa-linkedin-in:before,
+.fa-instagram:before {
+    padding: 4px;
 }
 
 .tutor-course-level {
