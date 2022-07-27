@@ -4977,7 +4977,7 @@
 			-webkit-transition: .4s ease-in-out;
 			transition: all .4s ease-in-out;
 			margin-bottom: 0;
-			max-height: 76%;
+
 			display: inline-block;
 			float: none;
 			vertical-align: middle;
@@ -16517,7 +16517,7 @@
 			}
 
 			#logo {
-				max-height: 83%;
+
 				margin-top: -60px;
 				z-index: 999
 			}
@@ -16535,9 +16535,16 @@
 			box-shadow: 0 0 20px 0 rgba(51, 51, 51, .1)
 		}
 
+		.fa-facebook-f,
 		.fa-linkedin-in,
 		.fa-instagram {
 			cursor: pointer
+		}
+
+		.fa-facebook-f {
+			position: relative;
+			top: -2px;
+			right: -2px;
 		}
 
 		.et_pb_scroll_top {
@@ -17670,46 +17677,15 @@
 
 						<ul class="et-social-icons">
 
-							<li class="et-social-icon et-social-facebook">
-								<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317" target="_blank"
-									class="icon">
-									<span>Facebook</span>
-								</a>
-							</li>
-							<li class="et-social-icon fab fa-linkedin-in">
-								<a href="https://www.linkedin.com/company/teamwork-consulting/" class="icon">
-									<span>Instagram</span>
-								</a>
-							</li>
-							<li class="et-social-icon fab fa-instagram">
-								<a href="https://www.instagram.com/teamwork.consulting/" class="icon">
-									<span>Instagram</span>
-								</a>
-							</li>
+							<li class="et-social-icon fab fa-facebook-f"></li>
+							<li class="et-social-icon fab fa-linkedin-in"></li>
+							<li class="et-social-icon fab fa-instagram"></li>
 
 						</ul>
 					</div>
 
 
-					<div id="et-secondary-menu">
-						<div class="et_duplicate_social_icons">
-							<ul class="et-social-icons">
 
-								<li class="et-social-icon et-social-facebook">
-									<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317"
-										target="_blank" class="icon">
-										<span>Facebook</span>
-									</a>
-								</li>
-								<li class="et-social-icon fab fa-linkedin-in">
-									<a href="https://www.linkedin.com/company/teamwork-consulting/" class="icon">
-										<span>Instagram</span>
-									</a>
-								</li>
-
-							</ul>
-						</div>
-					</div>
 
 				</div>
 			</div>
@@ -17720,7 +17696,7 @@
 					<div class="logo_container">
 						<span class="logo_helper"></span>
 						<a href="..">
-							<img src="../img/logo-transparent.png" width="257" height="110" alt="Teamwork" id="logo"
+							<img src="../img/logo-transparent.png" alt="Teamwork" id="logo"
 								data-height-percentage="80" />
 						</a>
 					</div>
@@ -19121,26 +19097,24 @@
 	<script type="text/javascript">
 		var et_animation_data = [{ "class": "et_pb_column_0", "style": "slideTop", "repeat": "once", "duration": "1500ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_2", "style": "slideLeft", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_9", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_10", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_18", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_19", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_20", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_21", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_column_22", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "500ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
 	</script>
-	<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
-	$('.et-social-instagram').addClass('fab fa-linkedin-in').removeClass('et-social-instagram');
-	
-	$('.fa-linkedin-in').click(function() {
-		window.open("https://www.linkedin.com/company/teamwork-consulting/");
-	})
+	<script type="text/javascript">
+		$(document).ready(function () {
 
-	$('.fa-instagram').click(function() {
-		window.open("https://www.instagram.com/teamwork.consulting/");
-	})
-	
-	//$('.tutor-course-purchase-btn').click(function(){
-//		window.location.href = 'https://twc.ma/contact/'
-//	})
-//	
-//	$('.tutor-course-header').click(function(e){
-//		e.preventDefault();
-//	})
-	
-});</script>
+
+			$('.fa-linkedin-in').click(function () {
+				window.open("https://www.linkedin.com/company/teamwork-consulting/");
+			})
+
+			$('.fa-instagram').click(function () {
+				window.open("https://www.instagram.com/teamwork.consulting/");
+			});
+
+			$('.fa-facebook-f').click(function () {
+				window.open("https://www.facebook.com/Teamwork-Consulting-880139045335317");
+			});
+
+
+		});</script>
 
 
 

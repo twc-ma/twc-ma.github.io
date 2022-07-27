@@ -2886,7 +2886,6 @@
  	-webkit-transition: all .4s ease-in-out;
  	transition: all .4s ease-in-out;
  	margin-bottom: 0;
- 	max-height: 76%;
  	display: inline-block;
  	float: none;
  	vertical-align: middle;
@@ -6047,7 +6046,7 @@
  }
 
  #et-info-email:hover,
-		#et-info-phone:hover,
+ #et-info-phone:hover,
  #et-secondary-menu>ul>li>a:hover {
  	opacity: .7;
  	-webkit-transition: all .4s ease-in-out;
@@ -6295,7 +6294,7 @@
  }
 
  .et-social-icons a:hover,
-		#top-header .et-social-icons li:hover {
+ #top-header .et-social-icons li:hover {
  	opacity: .7;
  	-webkit-transition: all .4s ease-in-out;
  	transition: all .4s ease-in-out

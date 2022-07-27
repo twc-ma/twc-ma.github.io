@@ -1039,10 +1039,6 @@
 			height: 100px
 		}
 
-		#logo {
-			max-height: 80%
-		}
-
 		.et_pb_svg_logo #logo {
 			height: 80%
 		}
@@ -1300,46 +1296,15 @@
 
 						<ul class="et-social-icons">
 
-							<li class="et-social-icon et-social-facebook">
-								<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317" target="_blank"
-									class="icon">
-									<span>Facebook</span>
-								</a>
-							</li>
-							<li class="et-social-icon fab fa-linkedin-in">
-								<a href="https://www.linkedin.com/company/teamwork-consulting/" class="icon">
-									<span>Instagram</span>
-								</a>
-							</li>
-							<li class="et-social-icon fab fa-instagram">
-								<a href="https://www.instagram.com/teamwork.consulting/" class="icon">
-									<span>Instagram</span>
-								</a>
-							</li>
+							<li class="et-social-icon fab fa-facebook-f"></li>
+							<li class="et-social-icon fab fa-linkedin-in"></li>
+							<li class="et-social-icon fab fa-instagram"></li>
 
 						</ul>
 					</div>
 
 
-					<div id="et-secondary-menu">
-						<div class="et_duplicate_social_icons">
-							<ul class="et-social-icons">
 
-								<li class="et-social-icon et-social-facebook">
-									<a href="https://www.facebook.com/Teamwork-Consulting-880139045335317"
-										target="_blank" class="icon">
-										<span>Facebook</span>
-									</a>
-								</li>
-								<li class="et-social-icon fab fa-linkedin-in">
-									<a href="https://www.linkedin.com/company/teamwork-consulting/" class="icon">
-										<span>Instagram</span>
-									</a>
-								</li>
-
-							</ul>
-						</div>
-					</div>
 
 				</div>
 			</div>
@@ -1350,7 +1315,7 @@
 					<div class="logo_container">
 						<span class="logo_helper"></span>
 						<a href="..">
-							<img src="../img/logo-transparent.png" width="257" height="110" alt="Teamwork" id="logo"
+							<img src="../img/logo-transparent.png" alt="Teamwork" id="logo"
 								data-height-percentage="80" />
 						</a>
 					</div>
@@ -2012,20 +1977,32 @@
 	<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
 
 
-	<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
-	$('.et-social-instagram').addClass('fab fa-linkedin-in').removeClass('et-social-instagram');
-	
-	$('.fa-linkedin-in').click(function() {
-		window.open("https://www.linkedin.com/company/teamwork-consulting/");
-	})
+	<script type="text/javascript">
+		$(document).ready(function () {
 
-	$('.fa-instagram').click(function() {
-		window.open("https://www.instagram.com/teamwork.consulting/");
-	})
-	
-});</script>
+
+			$('.fa-linkedin-in').click(function () {
+				window.open("https://www.linkedin.com/company/teamwork-consulting/");
+			})
+
+			$('.fa-instagram').click(function () {
+				window.open("https://www.instagram.com/teamwork.consulting/");
+			});
+
+			$('.fa-facebook-f').click(function () {
+				window.open("https://www.facebook.com/Teamwork-Consulting-880139045335317");
+			});
+
+		});
+	</script>
 
 	<style>
+		.fa-facebook-f,
+		.fa-instagram {
+			cursor: pointer;
+		}
+
+		.fa-facebook-f,
 		.fa-instagram {
 			cursor: pointer;
 		}

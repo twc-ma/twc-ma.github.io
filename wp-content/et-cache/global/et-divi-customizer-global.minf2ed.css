@@ -154,10 +154,6 @@ body.et_vertical_nav .container.et_search_form_container .et-search-form input {
         height: 100px
     }
 
-    #logo {
-        max-height: 80%
-    }
-
     .et_pb_svg_logo #logo {
         height: 80%
     }
@@ -344,7 +340,7 @@ select {
 
 @media only screen and (min-width:981px) {
     #logo {
-        max-height: 83%;
+
         margin-top: -60px;
         z-index: 999
     }
@@ -371,8 +367,16 @@ select {
     display: none !important
 }
 
-.fa-linkedin-in, .fa-instagram {
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram {
     cursor: pointer
+}
+
+.fa-facebook-f {
+    position: relative;
+    top: -2px;
+    right: -2px;
 }
 
 .tutor-course-level {
