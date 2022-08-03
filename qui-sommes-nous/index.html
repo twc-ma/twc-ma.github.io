@@ -17691,10 +17691,44 @@
 			<header id="main-header" data-height-onload="100">
 				<div class="container clearfix et_menu_container">
 					<div class="logo_container">
-						<span class="logo_helper"></span>
-						<a href="..">
-							<img src="../twc-content/img/logo-transparent.png" alt="Teamwork" id="logo"
-								data-height-percentage="80" />
+						<style>
+							.logo {
+								text-decoration: none;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								margin-top: -20px;
+								z-index: 999;
+								user-select: none;
+							}
+
+							.logo-img {
+								width: 84px;
+							}
+
+							.logo-title-primary,
+							.logo-title-secondary {
+								color: #ec6726;
+								text-align: center;
+								font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+								-webkit-font-smoothing: none;
+							}
+
+							.logo-title-primary {
+								font-weight: 400;
+								font-size: .9rem;
+							}
+
+							.logo-title-secondary {
+								font-size: .55rem;
+								margin-top: -10px;
+							}
+						</style>
+
+						<a href=".." class="logo">
+							<img src="../twc-content/img/logo-transparent.png" alt="Teamwork" class="logo-img" />
+							<span class="logo-title-primary">TEAMWORK</span>
+							<span class="logo-title-secondary">It's all about people</span>
 						</a>
 					</div>
 					<div id="et-top-navigation" data-height="100" data-fixed-height="100">
@@ -18475,7 +18509,8 @@
 
 													<div class="et_pb_text_inner">
 														<h3>Témoignages de nos <span
-																style="color: #ec6726;">clients</span></h3>
+																style="color: #ec6726;">clients</span>
+														</h3>
 													</div>
 												</div>
 											</div>
@@ -18755,7 +18790,8 @@
 												<div class="et_contact_bottom_container">
 
 													<button type="submit"
-														class="et_pb_contact_submit et_pb_button">Envoyer un
+														class="et_pb_contact_submit et_pb_button">Envoyer
+														un
 														message</button>
 												</div>
 
